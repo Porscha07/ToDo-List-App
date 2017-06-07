@@ -11,8 +11,53 @@ a {
 h1{
 	color: black;
 }
+.weekly-header{
+	text-align: center;
+	margin: -12px;
+}
+.weekly-print h4{
+	text-align: center;
+	font-weight: bold;
+}
+
+hr{
+	height: 2px;
+	background-color: black;
+	color: black;
+	border-style:dashed;
+	width: 416px;
+}
 .container-fluid{
 	background-color: beige;
 	border: 2px solid black;
 	border-radius: 0.5px;
 }
+.weekly-row{
+	background-color: beige;
+	text-align: center;
+	padding-top: 11px;
+}
+.monday{
+	border: 3px solid blue;
+}
+.tuesday{
+	border: 3px solid brown;
+}
+.wednesday{
+	border: 3px solid orange;
+	
+}
+.thursday{
+	border: 3px solid purple;
+}
+.friday{
+	border: 3px solid green;
+}
+/* .saturday{
+	background-color: beige;
+	border: 3px solid red;
+}
+.sunday{
+	background-color: beige;
+	border: 3px solid hotpink;
+} */
