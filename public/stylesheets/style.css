@@ -64,11 +64,18 @@ hr{
 	border: 3px solid black;
 	height: 194px;
 	width: 44%;
+	margin-top: 6px;
+}
+.middle-wrapper{
+	margin-top: -564px;
+	margin-left: 480px;
+	width: 1128px;
 }
 .calls{
 	text-align: center;
 	border: 3px solid black;
 	height: 350px;
+	margin-right: 8px;
 }
 .emails{
 	text-align: center;
@@ -81,6 +88,7 @@ hr{
 	border: 3px solid black;
 	height: 370px;
 	width: 45%;
+	margin-top: 7px;
 
 }
 .notes{
@@ -88,6 +96,7 @@ hr{
 	border: 3px solid black;
 	height: 190px;
 	width: 50%;
+	margin-left: 494px;
 
 }
 .get-done{
@@ -95,5 +104,6 @@ hr{
 	border: 3px solid black;
 	height: 190px;
 	width: 50%;
+	margin-top: 5px;
 
 }
