@@ -62,7 +62,7 @@ hr{
 .must-do{
 	text-align: center;
 	border: 3px solid black;
-	height: 234px;
+	height: 194px;
 	width: 44%;
 }
 .calls{
@@ -80,6 +80,7 @@ hr{
 	text-align: center;
 	border: 3px solid black;
 	height: 370px;
+	width: 45%;
 
 }
 .notes{
