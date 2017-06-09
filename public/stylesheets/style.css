@@ -1,3 +1,10 @@
+.container-fluid{
+	height: 1085px;
+}
+
+
+
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -42,22 +49,38 @@ hr{
 	border: 3px solid black;
 	height: 190px;
 }
+.monday-text{
+	height: 103px;
+}
 .tuesday{
 	border: 3px solid black;
 	height: 190px;
+}
+.tuesday-text{
+	height: 103px;
 }
 .wednesday{
 	border: 3px solid black;
 	height: 190px;
 	padding-right: 0px;
 }
+.wednesday-text{
+	height: 103px;
+}
+
 .thursday{
 	border: 3px solid black;
 	height: 190px;
 }
+.thursday-text{
+	height: 103px;
+}
 .friday{
 	border: 3px solid black;
 	height: 190px;
+}
+.friday-text{
+	height: 103px;
 }
 .must-do{
 	text-align: center;
@@ -95,8 +118,9 @@ hr{
 	text-align: center;
 	border: 3px solid black;
 	height: 190px;
-	width: 50%;
+	width: 199%;
 	margin-left: 494px;
+	margin-top: -112px;
 
 }
 .get-done{
@@ -105,5 +129,8 @@ hr{
 	height: 190px;
 	width: 50%;
 	margin-top: 5px;
-
+}
+.buttons{
+	width: 300px
+	;
 }
