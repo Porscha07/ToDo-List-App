@@ -1,9 +1,12 @@
 .container-fluid{
 	height: 1085px;
 }
-
-
-
+#tel{
+	margin-bottom: 18px;
+}
+#email{
+	margin-bottom: 18px;
+}
 
 body {
   padding: 50px;
@@ -82,12 +85,15 @@ hr{
 .friday-text{
 	height: 103px;
 }
-.must-do{
+.Appointments{
 	text-align: center;
 	border: 3px solid black;
 	height: 194px;
 	width: 44%;
 	margin-top: 6px;
+}
+#a-text{
+	margin-bottom: 10px;
 }
 .middle-wrapper{
 	margin-top: -564px;
