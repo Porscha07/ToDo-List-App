@@ -124,9 +124,9 @@ hr{
 	text-align: center;
 	border: 3px solid black;
 	height: 190px;
-	width: 199%;
-	margin-left: 494px;
-	margin-top: -112px;
+	width: 48%;
+	margin-left: 507px;
+	margin-top: -86px;
 
 }
 .get-done{
@@ -137,6 +137,12 @@ hr{
 	margin-top: 5px;
 }
 .buttons{
-	width: 300px
-	;
+	width: 300px;
+}
+.input-group{
+	bottom: -66px;
+	right: 214px;
+}
+.password{
+
 }

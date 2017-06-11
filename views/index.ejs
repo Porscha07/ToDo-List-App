@@ -140,32 +140,34 @@
 																</div>
 																	<div class="text-black col-sm-6 buttons">
 																		<form class="form-inline" action="addItem" method="post">
+																			  <div class="Username">
+																			    <label><b>Username</b></label>
+																				    <input type="text" placeholder="Enter Username" name="uname" required>
+																				</div>
+																					<div class="password">
+																					    <label><b>Password</b></label>
+																					    <input type="password" placeholder="Enter Password" name="psw" required>
+																					    <button type="submit">Login</button>
+																				    </div>
+																		</form>
+																 </div>
 																			<div class="form-group">
-																				<div class="input-group">
-																					<input type="text" class="form-control" placeholder="New Task" name="newTask"/>
-																						<input type="date" class="form-control" name="newTaskDate"/>
-																					
+																				<div class="input-group">					<input type="date" class="date-control" name="newTaskDate"/>
 																						<button type="submit"class="btn btn-primary">Search</button>
 																						<button class="btn btn-danger">Delete</button>
 																						<button class="btn btn-warning">Edit</button>
+																				</div>
+																			</div>
+																				<div class="row">
+																					<div class="text-black col-sm-8 notes">
+																							<h3>Notes</h3>
+																							<form action="/">
+																								<textarea class= "monday-text" name="monday" rows="40"cols="40">Write your notes here.</textarea>
+																								<br>
+																							<input type="submit">
+																							</form>
 																					</div>
-																		</form>
-																	</div>
-																	<div class="text-black col-sm-8 notes">
-																		<h3>Notes</h3>
-																		<form action="/">
-																			<textarea class= "monday-text" name="monday" rows="40"cols="40">Write your notes here.</textarea>
-																			<br>
-																		<input type="submit">
-																		</form>
-																	</div>
-																
-													</div>	
-								
-				</div>
-			</div>
-									
-
+																				</div>								
 	</div>
 </body>
 </html>
