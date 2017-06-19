@@ -12,7 +12,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   /* background-image: url('images/container-background.jpg'); */
-  background-color: lightcoral;
+  background-color:darkmagenta;
 }
 
 a {
@@ -38,7 +38,7 @@ hr{
 	width: 416px;
 }
 .container-fluid{
-	background-color: beige;
+	background-color: wheat;
 	border: 2px solid black;
 	border-radius: 0.5px;
 }
