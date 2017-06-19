@@ -7,17 +7,35 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/sign.css">
 </head>
 
-<body>
+<body>	
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-6 sign-in-box">
-				<p>Test</p>
+		<div class="row-1">
+			<img src="../images/toDo-background.jpeg" alt="tech" class="col-sm-12 background">
+			<h1>To-Do For YOU App</h1>
+			<div class="col-sm-6 content">
+				<h1>To-Do for YOU App</h1>
+				<h3>Welcome!</h3>
+				<p>To-Do For You is a site that provides a concise and creative way to keep all of your thoughts and activities organized througout the week.</p> 
+				<br>
+				<p>Login below or sign up to create an account!</p>
+				<form action="/submit-login" method:"POST">
+					<div class="form-group new">
+						<label>Username:</label>
+						<input type="text" name="username" class="form-control username form-input">
+						<label>Password:</label>
+						<input type="password" name="password" class="form-control password form-input">
+					</div>
+					<button type="button" name="button" id="submit-login">Submit</button>
+					<br>
+				</form>
+					<div class="sign-up">
+						<p>New?
+							<a href="/sign-up">Sign Up</a>
+						</p>
+					</div>
 			</div>
 		</div>
 	</div>
-</head>
-<body>
-
 
 </body>
 </html>

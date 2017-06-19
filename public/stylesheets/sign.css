@@ -1,3 +1,40 @@
-sign-in-box{
-	border: 3px solid black;
+
+.container-fluid{
+	/* background-image: url('../images/toDo-background.jpeg'); */
+	background-repeat: no-repeat;
+}
+
+.background{
+	width: 100em;
+	border: 9px solid black;
+	padding-right: 0px;
+	padding-left:0px;
+}
+
+.form-group{
+	margin-bottom: 11px;
+    text-align: left;
+}
+
+.sign-up{
+	text-align: left;
+}
+
+.content{
+	position: absolute;
+	border: 3px solid dodgerblue;
+	background-color: dodgerblue;
+	margin-left: 202px;
+	margin-top: -614px;
+	text-align: center;
+    font-size: 21px;
+}
+
+.content h1{
+    position: absolute;
+    bottom: 534px;
+    right: 113px;
+    font-size: 60px;
+    text-align: center;
+    /* margin: auto; */
 }
