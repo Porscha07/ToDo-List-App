@@ -25,16 +25,21 @@
 	border: 3px solid dodgerblue;
 	background-color: dodgerblue;
 	margin-left: 202px;
-	margin-top: -614px;
+	margin-top: -787px;
 	text-align: center;
     font-size: 21px;
 }
 
 .content h1{
     position: absolute;
-    bottom: 534px;
+    bottom: 450px;
     right: 113px;
     font-size: 60px;
     text-align: center;
     /* margin: auto; */
+}
+
+#submit-login{
+	color: black;
+	background-color: lightgrey;
 }

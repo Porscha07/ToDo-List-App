@@ -2,6 +2,22 @@ var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
 var ejs = require('ejs');
+
+
+// $(document).ready(function() {
+//     $("button").click(function(){
+//         res.render('index');
+//     });
+// });
+
+
+
+
+
+
+
+
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
@@ -31,7 +47,7 @@ router.post('/sign', function(req, res) {
         if (results.length == 1) {
             var match = bcrypt.compareSync(password, results[0].password);
             if (match == true) {
-                res.redirect('/');
+                res.render('/localhost:3000');
             }else {
                 res.redirect('/sign?msg=badlogin');
             }
