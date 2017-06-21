@@ -25,7 +25,7 @@ router.get('/', function(req, res, next) {
 
 module.exports = router;
 
-//getting the sign-in page
+//getting the Home page-sign-in page
 router.get('/sign', function(req, res) {
      var message = req.query.msg;
          if(message == "badlogin"){
@@ -65,20 +65,18 @@ router.get('/register', function(req, res) {
 
 router.post('/register', (req,res)=>{
     
-    var name = req.body.name;
+    var firstname = req.body.firstname;
     var email = req.body.email;
     var password = req.body.password;
-    var user = req.body.user;
-    var age = req.body.age;
-    var zipcode = req.body.zipcode;
-    var phonenumber = req.body.phonenumber;
+    var username = req.body.username;
+    var lastname = req.body.lastname;
     var hash = bcrypt.hashSync(password);
 
 
-    var insertQuery = "INSERT INTO Register (name, email, password, user, age, zipcode, phonenumber) VALUES (?,?,?,?,?,?,?)";
+    var insertQuery = "INSERT INTO Register (firstname, email, password, username, lastname) VALUES (?,?,?,?,?)";
 
     // res.send(insertQuery);
-    connection.query(insertQuery, [name, email, hash, user, age, zipcode, phonenumber], (error, results)=>{
+    connection.query(insertQuery, [firstname, email, hash, username, lastname ], (error, results)=>{
         if(error) throw error;
         res.redirect('http://localhost:3000/?item=added');
     });
