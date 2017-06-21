@@ -1,29 +1,54 @@
 var express = require('express');
 var router = express.Router();
-var mysql = require('mysql');
 var ejs = require('ejs');
+var mysql = require('mysql');
+
+var connection = mysql.createConnection({
+    host: '127.0.0.1',
+    user: 'x',
+    password: 'x',
+    database: 'To-Do-App'
+});
+
+connection.connect();
+
+//******************GETTING THE REGISTER PAGE**********************
+router.get('/register', function(req, res) {
+    res.render('register', {});
+});
 
 
-// $(document).ready(function() {
-//     $("button").click(function(){
-//         res.render('index');
-//     });
-// });
+router.post('/register', (req,res)=>{
+
+    console.log(req.body.firstName);
+    
+    var firstName = req.body.firstName;
+    var lastName = req.body.lastName;
+    var userName = req.body.userName;
+    var email = req.body.Email;
+    var password = req.body.Password;
+    var confPassword = req.body.ConfPassword;
+    // var hash = bcrypt.hashSync(password);
 
 
+    var insertQuery = "INSERT INTO Users (firstName, lastName, userName, Email, Password, ConfPassword ) VALUES (?,?,?,?,?,?)";
+
+    // res.send(insertQuery);
+    connection.query(insertQuery, [firstName, lastName, userName, email, password, confPassword],(error, results)=>{
+        if(error) throw error;
+        console.log(results);
+        res.redirect('http://localhost:3000/?newaccount=created');
+
+    });
 
 
-
-
-
-
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-module.exports = router;
 
 //getting the Home page-sign-in page
 router.get('/sign', function(req, res) {
@@ -57,28 +82,4 @@ router.post('/sign', function(req, res) {
     })
 })
 
-//getting the register page
-router.get('/register', function(req, res) {
-    res.render('register', {});
-});
-
-
-router.post('/register', (req,res)=>{
-    
-    var firstname = req.body.firstname;
-    var email = req.body.email;
-    var password = req.body.password;
-    var username = req.body.username;
-    var lastname = req.body.lastname;
-    var hash = bcrypt.hashSync(password);
-
-
-    var insertQuery = "INSERT INTO Register (firstname, email, password, username, lastname) VALUES (?,?,?,?,?)";
-
-    // res.send(insertQuery);
-    connection.query(insertQuery, [firstname, email, hash, username, lastname ], (error, results)=>{
-        if(error) throw error;
-        res.redirect('http://localhost:3000/?item=added');
-    });
-
-});
+module.exports = router;
