@@ -5,6 +5,8 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	
+
 </head>
 
 <body>
@@ -12,6 +14,7 @@
 		<div class="row">
 			<div class="col-sm-12 text-center weekly-header">
 				<h1>Weekly To Do List</h1>
+				<h5><a href="/sign">Log Out</h5>
 			</div>
 		</div>
 		<!-- **************************Weekly Row*********************** -->
@@ -25,40 +28,40 @@
 				<div class="text-black col-sm-12 weekly-row">
 					<div class="col-sm-2 monday">
 						<h3>Monday</h3>
-						<form action="/">
-							<textarea class= "monday-text" name="monday" rows="15"cols="15">Write your daily to-do's here.</textarea>
+						<form action="/" method="post">
+							<textarea class= "monday-text" name="Monday" rows="15"cols="15">Write your daily to-do's here.</textarea>
 							<br>
 						<input type="submit">
 						</form>
 					</div>
 							<div class="col-sm-2 tuesday">
 								<h3>Tuesday</h3>
-								<form action="/">
-								<textarea class= "tuesday-text" name="monday" rows="15"cols="15">Write your daily to-do's here.</textarea>
+								<form action="/" method="post">
+								<textarea class= "tuesday-text" name="Tuesday" rows="15"cols="15">Write your daily to-do's here.</textarea>
 								<br>
 						<input type="submit">
 						</form>
 							</div>
 									<div class="col-sm-2 wednesday">
 										<h3>Wednesday</h3>
-										<form action="/">
-											<textarea class= "wednesday-text" name="monday" rows="15"cols="15">Write your daily to-do's here.</textarea>
+										<form action="/" method="post">
+											<textarea class= "wednesday-text" name="Wednesday" rows="15"cols="15">Write your daily to-do's here.</textarea>
 											<br>
 										<input type="submit">
 										</form>
 									</div>
 										<div class="col-sm-2 thursday">
 											<h3>Thursday</h3>
-											<form action="/">
-												<textarea class= "thursday-text" name="monday" rows="15"cols="15">Write your daily to-do's here.</textarea>
+											<form action="/" method="post">
+												<textarea class= "thursday-text" name="Thursday" rows="15"cols="15">Write your daily to-do's here.</textarea>
 												<br>
 											<input type="submit">
 											</form>
 										</div>
 											<div class="col-sm-2  friday">
 												<h3>Friday</h3>
-												<form action="/">
-													<textarea class= "monday-text" name="monday" rows="15"cols="15">Write your daily to-do's here.</textarea>
+												<form action="/" method="post">
+													<textarea class= "monday-text" name="Friday" rows="15"cols="15">Write your daily to-do's here.</textarea>
 													<br>
 												<input type="submit">
 												</form>
@@ -68,11 +71,11 @@
 												<div class="row col-sm-12">
 													<div class="text-black col-sm-6 Appointments">
 														<h3>Appointments</h3>
-														<form action="/">
+														<form action="/" method="post">
 														<ol class="appointments-list">
-															<li><input type="time"/><input type="text" id="a-text"name="text" value="Appointment Details."/></li>
-															<li><input type="time"/><input type="text" id="a-text"name="text" value="Appointment Details."/></li>
-															<li><input type="time"/><input type="text" id="a-text"name="text" value="Appointment Details."/></li>
+															<li><input type="time" name="AppointmentTime"/><input type="text" id="a-text"name="Appointment Details" value="Appointment Details."/></li>
+															<li><input type="time" name="AppointmentTime"/><input type="text" id="a-text"name="Appointment Details" value="Appointment Details."/></li>
+															<li><input type="time" name="AppointmentTime"/><input type="text" id="a-text"name="Appointment Details" value="Appointment Details."/></li>
 														</ol>
 														<button class="btn btn-danger" input type="submit">submit</button>
 														</form>
@@ -80,16 +83,16 @@
 														<div class="row col-sm-12">
 															<div class="text-black col-sm-6 complete-list">
 																<h3><span style="color: lightcoral">The Complete List</span> Of Things To Do</h3>
-																<form action="/">
+																<form action="/" method="post">
 																<ol class="Complete-list">
-																	<li><input type="text" id="a-text"name="text" value=""/></li>
-																	<li><input type="text" id="a-text"name="text" value=""/></li>
-																	<li><input type="text" id="a-text"name="text" value=""/></li>
-																	<li><input type="text" id="a-text"name="text" value=""/></li>
-																	<li><input type="text" id="a-text"name="text" value=""/></li>
-																	<li><input type="text" id="a-text"name="text" value=""/></li>
-																	<li><input type="text" id="a-text"name="text" value=""/></li>
-																	<li><input type="text" id="a-text"name="text" value=""/></li>
+																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
+																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
+																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
+																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
+																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
+																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
+																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
+																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
 																</ol>
 																<button class="btn btn-cyan" input type="submit">submit</button>
 																</form>
@@ -99,14 +102,14 @@
 													<div class="col-sm-6 col-sm-offset-6 middle-wrapper">
 														<div class="text-black col-sm-3 calls">
 															<h3>Calls To Make</h3>
-															<form action="/">
+															<form action="/" method="post">
 															<ol class="tel-list">
-																<li><input type="tel" id="tel" name="tel"  required></li>
-																<li><input type="tel" id="tel" name="tel"  required></li>
-																<li><input type="tel" id="tel" name="tel"  required></li>	
-																<li><input type="tel" id="tel" name="tel"  require></li>
-																<li><input type="tel" id="tel" name="tel" required></li>
-																<li><input type="tel" id="tel" name="tel" required></li>
+																<li><input type="tel" id="tel" name="Calls"  required></li>
+																<li><input type="tel" id="tel" name="Calls"  required></li>
+																<li><input type="tel" id="tel" name="Calls"  required></li>	
+																<li><input type="tel" id="tel" name="Calls"  require></li>
+																<li><input type="tel" id="tel" name="Calls" required></li>
+																<li><input type="tel" id="tel" name="Calls" required></li>
 															</ol>
 															<button class="btn btn-warning" input type="submit">submit</button>
 															</form>	
@@ -114,14 +117,14 @@
 														</div>
 															<div class="text-black col-sm-3 emails">
 																<h3> Emails To Write</h3>
-																<form action="/">
+																<form action="/" method="post">
 																<ol class ="email-list">
-																	<li><input type="email" id="email" name="email" required></li>
-																	<li><input type="email" id="email"name="email" required></li>
-																	<li><input type="email" id="email"name="email" required></li>
-																	<li><input type="email" id="email"name="email" required></li>
-																	<li><input type="email" id="email"name="email" required></li>
-																	<li><input type="email" id="email"name="email" required></li>
+																	<li><input type="email" id="email" name="Emails" required></li>
+																	<li><input type="email" id="email"name="Emails" required></li>
+																	<li><input type="email" id="email"name="Emails" required></li>
+																	<li><input type="email" id="email"name="Emails" required></li>
+																	<li><input type="email" id="email"name="Emails" required></li>
+																	<li><input type="email" id="email"name="Emails" required></li>
 																</ol>
 																<button class="btn btn-primary" input type="submit">submit</button>
 																</form>
@@ -131,8 +134,8 @@
 																<!-- <div class="row col-sm-12"> -->
 																	<div class="text-back col-sm-8 get-done">
 																		<h3> 10 Minute Just <span style="color:lightcoral"><em>"Get It Done"</em></span> Projects</h3>
-																			<form action="/">
-																				<textarea class= "monday-text" name="monday" rows="40"cols="40">Write your mini-projects here.</textarea>
+																			<form action="/" method="post">
+																				<textarea class= "monday-text" name="GetitDone" rows="40"cols="40">Write your mini-projects here.</textarea>
 																				<br>
 																			<input type="submit">
 																			</form>
@@ -162,7 +165,7 @@
 																					<div class="text-black col-sm-8 notes">
 																							<h3>Notes</h3>
 																							<form action="/">
-																								<textarea class= "monday-text" name="monday" rows="40"cols="40">Write your notes here.</textarea>
+																								<textarea class= "monday-text" name="Notes" rows="40"cols="40">Write your notes here.</textarea>
 																								<br>
 																							<input type="submit">
 																							</form>

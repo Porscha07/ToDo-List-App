@@ -1,5 +1,5 @@
 // $(document).ready(function() {
 //     $("#submit-login").click(function(){
-//         $('.index').show();
+//         $('Hello, <%=userName%>').show()
 //     });
 // });
