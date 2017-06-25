@@ -1,148 +1,36 @@
-.container-fluid{
-	height: 1085px;
-}
-#tel{
-	margin-bottom: 18px;
-}
-#email{
-	margin-bottom: 18px;
-}
-
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  /* background-image: url('images/container-background.jpg'); */
-  background-color:darkmagenta;
+  /* background-color:  coral; */
+}
+.container-fluid{
+	/* background-image: url('../images/toDo-background.jpeg'); */
+	background-repeat: no-repeat;
 }
 
+.background{
+	width: 129em;
+	border: 9px solid black;
+	padding-right: 0px;
+	padding-left:0px;
+}
 a {
   color: #00B7FF;
 }
-h1{
-	color: black;
-}
-.weekly-header{
+/* .container{
+	margin-top: 40px;
+} */
+
+
+.content{
+	position: absolute;
+	/* border: 3px solid dodgerblue; */
+	/* background-color: dodgerblue; */
+	margin-left: -2px;
+	margin-top: 468px;
 	text-align: center;
-	margin: -12px;
-}
-.weekly-print h4{
-	text-align: center;
-	font-weight: bold;
+    font-size: 21px;
+    font-family: Autour One;
 }
 
-hr{
-	height: 2px;
-	background-color: black;
-	color: black;
-	border-style:dashed;
-	width: 416px;
-}
-.container-fluid{
-	background-color: wheat;
-	border: 2px solid black;
-	border-radius: 0.5px;
-}
-.weekly-row{
-	/* background-color: beige; */
-	text-align: center;
-	padding-top: 11px;
-	width: 119%;
-}
-.monday{
-	border: 3px solid black;
-	height: 190px;
-}
-.monday-text{
-	height: 103px;
-}
-.tuesday{
-	border: 3px solid black;
-	height: 190px;
-}
-.tuesday-text{
-	height: 103px;
-}
-.wednesday{
-	border: 3px solid black;
-	height: 190px;
-	padding-right: 0px;
-}
-.wednesday-text{
-	height: 103px;
-}
-
-.thursday{
-	border: 3px solid black;
-	height: 190px;
-}
-.thursday-text{
-	height: 103px;
-}
-.friday{
-	border: 3px solid black;
-	height: 190px;
-}
-.friday-text{
-	height: 103px;
-}
-.Appointments{
-	text-align: center;
-	border: 3px solid black;
-	height: 194px;
-	width: 44%;
-	margin-top: 6px;
-}
-#a-text{
-	margin-bottom: 10px;
-}
-.middle-wrapper{
-	margin-top: -564px;
-	margin-left: 480px;
-	width: 1128px;
-}
-.calls{
-	text-align: center;
-	border: 3px solid black;
-	height: 350px;
-	margin-right: 8px;
-}
-.emails{
-	text-align: center;
-	border: 3px solid black;
-	height: 350px;
-	width: 27.5%;
-}
-.complete-list{
-	text-align: center;
-	border: 3px solid black;
-	height: 370px;
-	width: 45%;
-	margin-top: 7px;
-
-}
-.notes{
-	text-align: center;
-	border: 3px solid black;
-	height: 190px;
-	width: 48%;
-	margin-left: 507px;
-	margin-top: -86px;
-
-}
-.get-done{
-	text-align: center;
-	border: 3px solid black;
-	height: 190px;
-	width: 50%;
-	margin-top: 5px;
-}
-.buttons{
-	width: 300px;
-}
-.input-group{
-	bottom: -66px;
-	right: 214px;
-}
-.password{
-
-}
+ 

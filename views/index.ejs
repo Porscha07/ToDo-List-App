@@ -1,176 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>To-Do for You</title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-	
-
+	<title>mySql To-Do App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
-
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-12 text-center weekly-header">
-				<h1>Weekly To Do List</h1>
-				<h5><a href="/sign">Log Out</h5>
+			<img src="../images/toDo-background.jpeg" alt="tech" class="col-sm-12 background">
+			<div class="col-sm-12 text-center content">
+				<h3><%= message%></h3>
+				<h1>Your ToDo List....</h1>
+				<form class="form-inline" action="addItem" method="post">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="New Task" name="newTask"/>
+						</div>
+						<div class="input-group">
+							<input type="date" class="form-control" name="newTaskDate"/>
+						</div>
+						<button type="submit"class="btn btn-primary">Add New Task</button>
+				</form>
 			</div>
-		</div>
-		<!-- **************************Weekly Row*********************** -->
 			<div class="row">
-				<div class="col-sm-12 text center weekly-print">
-					<hr>
-						<em><span style="color:dodgerblue"><h4>(This~Week)</h4></span></em>
-				</div>
-			</div>
-			<div class="row">
-				<div class="text-black col-sm-12 weekly-row">
-					<div class="col-sm-2 monday">
-						<h3>Monday</h3>
-						<form action="/" method="post">
-							<textarea class= "monday-text" name="Monday" rows="15"cols="15">Write your daily to-do's here.</textarea>
-							<br>
-						<input type="submit">
-						</form>
-					</div>
-							<div class="col-sm-2 tuesday">
-								<h3>Tuesday</h3>
-								<form action="/" method="post">
-								<textarea class= "tuesday-text" name="Tuesday" rows="15"cols="15">Write your daily to-do's here.</textarea>
-								<br>
-						<input type="submit">
-						</form>
-							</div>
-									<div class="col-sm-2 wednesday">
-										<h3>Wednesday</h3>
-										<form action="/" method="post">
-											<textarea class= "wednesday-text" name="Wednesday" rows="15"cols="15">Write your daily to-do's here.</textarea>
-											<br>
-										<input type="submit">
-										</form>
-									</div>
-										<div class="col-sm-2 thursday">
-											<h3>Thursday</h3>
-											<form action="/" method="post">
-												<textarea class= "thursday-text" name="Thursday" rows="15"cols="15">Write your daily to-do's here.</textarea>
-												<br>
-											<input type="submit">
-											</form>
-										</div>
-											<div class="col-sm-2  friday">
-												<h3>Friday</h3>
-												<form action="/" method="post">
-													<textarea class= "monday-text" name="Friday" rows="15"cols="15">Write your daily to-do's here.</textarea>
-													<br>
-												<input type="submit">
-												</form>
-											</div>
-			</div>
-		<!-- *********************************Must-Do Row***************************** -->
-												<div class="row col-sm-12">
-													<div class="text-black col-sm-6 Appointments">
-														<h3>Appointments</h3>
-														<form action="/" method="post">
-														<ol class="appointments-list">
-															<li><input type="time" name="AppointmentTime"/><input type="text" id="a-text"name="Appointment Details" value="Appointment Details."/></li>
-															<li><input type="time" name="AppointmentTime"/><input type="text" id="a-text"name="Appointment Details" value="Appointment Details."/></li>
-															<li><input type="time" name="AppointmentTime"/><input type="text" id="a-text"name="Appointment Details" value="Appointment Details."/></li>
-														</ol>
-														<button class="btn btn-danger" input type="submit">submit</button>
-														</form>
-													</div>
-														<div class="row col-sm-12">
-															<div class="text-black col-sm-6 complete-list">
-																<h3><span style="color: lightcoral">The Complete List</span> Of Things To Do</h3>
-																<form action="/" method="post">
-																<ol class="Complete-list">
-																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
-																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
-																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
-																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
-																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
-																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
-																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
-																	<li><input type="text" id="a-text"name="CompleteList" value=""/></li>
-																</ol>
-																<button class="btn btn-cyan" input type="submit">submit</button>
-																</form>
-															</div>
-														</div>
-												</div>
-													<div class="col-sm-6 col-sm-offset-6 middle-wrapper">
-														<div class="text-black col-sm-3 calls">
-															<h3>Calls To Make</h3>
-															<form action="/" method="post">
-															<ol class="tel-list">
-																<li><input type="tel" id="tel" name="Calls"  required></li>
-																<li><input type="tel" id="tel" name="Calls"  required></li>
-																<li><input type="tel" id="tel" name="Calls"  required></li>	
-																<li><input type="tel" id="tel" name="Calls"  require></li>
-																<li><input type="tel" id="tel" name="Calls" required></li>
-																<li><input type="tel" id="tel" name="Calls" required></li>
-															</ol>
-															<button class="btn btn-warning" input type="submit">submit</button>
-															</form>	
-															<!-- <button class="btn btn-warning" input type="submit">submit</button> -->
-														</div>
-															<div class="text-black col-sm-3 emails">
-																<h3> Emails To Write</h3>
-																<form action="/" method="post">
-																<ol class ="email-list">
-																	<li><input type="email" id="email" name="Emails" required></li>
-																	<li><input type="email" id="email"name="Emails" required></li>
-																	<li><input type="email" id="email"name="Emails" required></li>
-																	<li><input type="email" id="email"name="Emails" required></li>
-																	<li><input type="email" id="email"name="Emails" required></li>
-																	<li><input type="email" id="email"name="Emails" required></li>
-																</ol>
-																<button class="btn btn-primary" input type="submit">submit</button>
-																</form>
+			  <div class="col-sm-12">
+			  	<table class="table">
+			  	<tr>
+				  	<th>Task Name</th>
+				  	<th>Task Due Date</th>
+				  	<th>Edit</th>
+				  	<th>Delete</th>
+			  	</tr>
+			<% for (let i = 0; i<taskArray.length; i++){ %>
+			  	<tr>
+				  	<td><%= taskArray[i].taskName %>%></td>
+				  	<td><%= taskArray[i].taskDate %></td>
+				  	<td>
+				  	<a href="/edit/<%=taskArray[i].id %>">
+				  	<button class ="btn btn-warning">Edit</button>
+				  	</a>
+				  	</td>
 
-															</div>
-													<!-- </div> -->
-																<!-- <div class="row col-sm-12"> -->
-																	<div class="text-back col-sm-8 get-done">
-																		<h3> 10 Minute Just <span style="color:lightcoral"><em>"Get It Done"</em></span> Projects</h3>
-																			<form action="/" method="post">
-																				<textarea class= "monday-text" name="GetitDone" rows="40"cols="40">Write your mini-projects here.</textarea>
-																				<br>
-																			<input type="submit">
-																			</form>
-																	</div>
-																</div>
-<!-- 																	<div class="text-black col-sm-6 buttons">
-																		<form class="form-inline" action="addItem" method="post">
-																			  <div class="Username">
-																			    <label><b>Username</b></label>
-																				    <input type="text" placeholder="Enter Username" name="uname" required>
-																				</div>
-																					<div class="password">
-																					    <label><b>Password</b></label>
-																					    <input type="password" placeholder="Enter Password" name="psw" required>
-																					    <button type="submit">Login</button>
-																				    </div>
-																		</form> -->
-																 </div>
-																			<div class="form-group">
-																				<div class="input-group">					<input type="date" class="date-control" name="newTaskDate"/>
-																						<button type="submit"class="btn btn-primary">Search</button>
-																						<button class="btn btn-danger">Delete</button>
-																						<button class="btn btn-warning">Edit</button>
-																				</div>
-																			</div>
-																				<div class="row">
-																					<div class="text-black col-sm-8 notes">
-																							<h3>Notes</h3>
-																							<form action="/">
-																								<textarea class= "monday-text" name="Notes" rows="40"cols="40">Write your notes here.</textarea>
-																								<br>
-																							<input type="submit">
-																							</form>
-																					</div>
-																				</div>								
+				  	<td>
+					  	<a href="/delete/<%=taskArray[i].id%>">
+						  	<button class="btn btn-danger">Delete</button>
+					  	</a>
+				  	</td>
+			  	</tr>
+			<% } %>
+			  	</table>
+		</div>
 	</div>
-</body>
-</html>
+
+
