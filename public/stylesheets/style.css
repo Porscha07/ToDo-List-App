@@ -9,7 +9,7 @@ body {
 }
 
 .background{
-	width: 129em;
+	width: 1833px;
 	border: 9px solid black;
 	padding-right: 0px;
 	padding-left:0px;
@@ -24,13 +24,22 @@ a {
 
 .content{
 	position: absolute;
-	/* border: 3px solid dodgerblue; */
-	/* background-color: dodgerblue; */
+	border: 3px solid dodgerblue;
+	background-color: dodgerblue;
 	margin-left: -2px;
 	margin-top: 468px;
 	text-align: center;
     font-size: 21px;
     font-family: Autour One;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.content h1{
+	font-family: Autour One;
+    font-weight: bold;
+    font-size: 30px;
+
 }
 
  
