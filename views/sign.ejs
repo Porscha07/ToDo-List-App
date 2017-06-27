@@ -15,23 +15,22 @@
 
 <body>	
 	<div class="container-fluid">
-		<div class="row-1">
-			<img src="../images/toDo-background.jpeg" alt="tech" class="col-sm-12 background">
-			<h1>To-Do For YOU App</h1>
+		<div class="row">
+			<img src="../images/toDo-background.jpeg" alt="tech" class="img-responsive"/>
 			<div class="col-sm-6 content">
 				<h1>To-Do for YOU App</h1>
 				<h3>Welcome!</h3>
 				<p>To-Do for You is a site that provides a concise and creative way to keep all of your thoughts and activities organized througout the week.</p> 
 				<br>
 				<p>Login below or sign up to create an account!</p>
-				<form action="/sign" method:"POST">
+				<form action="/sign" method:"post">
 					<div class="form-group new">
 						<label>Username:</label>
-						<input type="text" name="username" class="form-control username form-input">
+						<input type="text" name="username" placeholder="User Name" class="form-control username form-input"/>
 						<label>Password:</label>
-						<input type="password" name="password" class="form-control password form-input">
+						<input type="password" name="password" placeholder="*****" class="form-control password form-input"/>
 					</div>
-					<button type="submit" name="button" id="submit-login" >Submit</button>
+					<button type="submit" name="button" id="submit-login">Submit</button>
 					<br>
 				</form>
 					<div class="sign-up">

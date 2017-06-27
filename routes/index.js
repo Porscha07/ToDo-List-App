@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 //import your custom "config" node module.
 //it hold a single object that has your MySQL credentials
+var bcrypt = require('bcrypt-nodejs');
 var config = require('../config/config');
 
     //include your mysql module. we got this via npm
@@ -91,25 +92,29 @@ router.get('/register', function(req, res) {
 });
 
 
-router.post('/register', (req,res)=>{
-
-    console.log(req.body.firstName);
-    
+router.post('/register', (req,res)=>{  
     var firstName = req.body.firstName;
     var lastName = req.body.lastName;
     var userName = req.body.userName;
     var email = req.body.Email;
     var password = req.body.Password;
-    var confPassword = req.body.ConfPassword;
-    // var hash = bcrypt.hashSync(password);
+    var confpassword = req.body.ConfPassword;
+    var hash = bcrypt.hashSync(password);
+    console.log(hash);
 
 
-    var insertQuery = "INSERT INTO users (firstName, lastName, userName, Email, Password, ConfPassword ) VALUES (?,?,?,?,?,?)";
+    var insertQuery = "INSERT INTO users (firstName, lastName, userName, Email, Password) VALUES (?,?,?,?,?)";
 
     // res.send(insertQuery);
-    connection.query(insertQuery, [firstName, lastName, userName, email, password, confPassword],(error, results)=>{
+    connection.query(insertQuery, [firstName, lastName, userName, email, hash, confpassword],(error, results)=>{
         if(error) throw error;
         // console.log(results);
+        req.body.firstName = firstName;
+        req.body.lastName = lastName;
+        req.body.userName = userName;
+        req.body.email = email;
+        req.body.confpassword = confpassword
+        // req.session.loggedin = true;
         res.redirect('http://localhost:3000/?newaccount=created');
 
     });
@@ -120,32 +125,29 @@ router.post('/register', (req,res)=>{
 // ****************************************getting the  SIGN-IN page************************************
 
 router.get('/sign', function(req, res) {
-     var message = req.query.msg;
-         if(message == "badlogin"){
-            message="Incorrect Login"    
-        }else if (message == null){
-            message = " "
-        }
-    res.render('sign', {
-        message:message
-    });
+    res.render('sign',{ });
 });
 
 
 router.post('/sign', function(req, res) {
-    var user = req.body.user;
+    var userName = req.body.userName;
     var password = req.body.password;
-    var selectQuery = "SELECT userName, Password FROM users WHERE userName=? Password = ?)";
-    connection.query(selectQuery, [userName,Password],(error, results)=> {
+    // var selectQuery = "SELECT userName, Password FROM users WHERE userName=? Password = ?)";
+    var selectQuery = "SELECT * FROM Users WHERE userName = ?"
+    connection.query(selectQuery, [userName],(error, results)=> {
+        if (error){ throw error};
         if (results.length == 1) {
-            // var match = bcrypt.compareSync(password, results[0].password);
-            if (match == true) {
-                res.render('/localhost:3000');
+            var match = bcrypt.compareSync(password, results[0].password);
+            if (match){
+                // req.session.loggedin = true;
+                req.body.userName = results[0].userName;
+                req.body.password = results[0].password;
+                res.redirect('http://localhost:3000/?msg=successfullogin'); 
             }else {
-                res.redirect('/sign?msg=loginattempt=successful');
+                res.redirect('http://localhost:3000/sign?msg=badlogin');
             }
         }else {
-            res.redirect('/sign?msg=badlogin');
+            res.redirect('http://localhost:3000/?msg=loginattempt=successful');
         }
     })
 })
