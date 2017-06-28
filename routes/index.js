@@ -16,8 +16,8 @@ var config = require('../config/config');
     //we are now connected ( after this line)!
     connection.connect();// aka nodemon(run in terminal)
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
+/* GET  HOME page. */
+router.get('/index', function(req, res, next) {
     var message = req.query.msg;//can substitute msg for api key, etc
     if(message == "added"){
         message = "Your task was added!";
@@ -115,7 +115,7 @@ router.post('/register', (req,res)=>{
         req.body.email = email;
         req.body.confpassword = confpassword
         // req.session.loggedin = true;
-        res.redirect('http://localhost:3000/?newaccount=created');
+        res.redirect('/index?newaccount=created');
 
     });
 
@@ -124,30 +124,32 @@ router.post('/register', (req,res)=>{
 
 // ****************************************getting the  SIGN-IN page************************************
 
-router.get('/sign', function(req, res) {
+router.get('/', function(req, res) {
     res.render('sign',{ });
 });
 
 
-router.post('/sign', function(req, res) {
+router.post('/', function(req, res) {
+
     var userName = req.body.userName;
-    var password = req.body.password;
-    // var selectQuery = "SELECT userName, Password FROM users WHERE userName=? Password = ?)";
-    var selectQuery = "SELECT * FROM Users WHERE userName = ?"
+    var password = req.body.Password;
+    var hash= bcrypt.hashSync(password);
+    var selectQuery = "SELECT * FROM users WHERE userName = ?";
+    // var selectQuery = "SELECT userName, Password FROM users "
     connection.query(selectQuery, [userName],(error, results)=> {
         if (error){ throw error};
         if (results.length == 1) {
             var match = bcrypt.compareSync(password, results[0].password);
+
             if (match){
-                // req.session.loggedin = true;
-                req.body.userName = results[0].userName;
-                req.body.password = results[0].password;
-                res.redirect('http://localhost:3000/?msg=successfullogin'); 
+                req.session.loggedin = true;
+                req.session.userName = results.userName;
+                res.redirect('/?msg=successfullogin'); 
             }else {
-                res.redirect('http://localhost:3000/sign?msg=badlogin');
+                res.redirect('/?msg=badlogin');
             }
         }else {
-            res.redirect('http://localhost:3000/?msg=loginattempt=successful');
+            res.redirect('/');
         }
     })
 })
