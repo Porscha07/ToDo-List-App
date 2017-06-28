@@ -36,6 +36,9 @@ router.get('/index', function(req, res, next) {
         });
     })
 });
+router.post('/index', function(req, res) {
+    res.redirect('/index?login=successful')
+});
 //add a post route "addItem to handle the form submission"
 //any form responses will be in req.body
 //**********How tasks are being added to the app and database*******************
@@ -144,9 +147,9 @@ router.post('/', function(req, res) {
             if (match){
                 req.session.loggedin = true;
                 req.session.userName = results.userName;
-                res.redirect('/?msg=successfullogin'); 
+                res.redirect('/index?login=successfull'); 
             }else {
-                res.redirect('/?msg=badlogin');
+                res.redirect('/index?login=incorrect');
             }
         }else {
             res.redirect('/');
