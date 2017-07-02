@@ -11,7 +11,7 @@ To-Do for You is a web application that provides a concise and creative way to k
 ## Languages and Technologies
 
 
-##### What I used
+## What I used
 
 * HTML
 * CSS
@@ -26,16 +26,18 @@ To-Do for You is a web application that provides a concise and creative way to k
 * express-session (node module, used to keep the current user logged in and save information about that user)
 
 
-##Site Walkthrough
+#Site Walkthrough
 
 ##Landing Page
+
 Users see a brief welcome message and can either log in or creare an account.
  <p align='center'>
-    <img src='../Images/homepage.png'></img>
+    <img src='public/images/homepage.png'></img>
  </p>
 
 
 ##User's Home Page
+
 Top left corner shows their name and the logout link. The user also sees the Task's box where they can add,edit,or delete tasks.
 
 <!-- <p align='center'>
@@ -44,9 +46,10 @@ Top left corner shows their name and the logout link. The user also sees the Tas
 
 
 ## Edit Tasks Page
+
  Users can view their selected task/date and make changes. 
 <p align='center'>
-	<img src='../Images/editpage.png'></img>
+	<img src='public/images/editpage.png'></img>
 </p>
 
 ##Challenges
