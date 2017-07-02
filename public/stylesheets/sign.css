@@ -5,10 +5,11 @@
 }
 
 .img-responsive{
-	width: 100em;
+	width: 99vw;
 	border: 9px solid black;
 	padding-right: 0px;
 	padding-left:0px;
+	height: 102vh;
 }
 
 .form-group{
@@ -29,6 +30,9 @@
     /* margin: auto; */
     font-family:'Autour One';
 }
+.content h3{
+	font-size: 47px;
+}
 
 .content{
 	position: absolute;
@@ -44,4 +48,55 @@
 #submit-login{
 	color: black;
 	background-color: lightgrey;
+}
+
+/* MEDIA QUERIES */
+@media(min-width:1280px){
+	.content h1{
+		right: 201px;
+    	font-size: 3em;
+    	bottom: 426px;
+	}
+	.content{
+		right: 553px;
+    	width: 1222px;
+    	font-size: 29px;
+	}
+
+}
+@media(min-width:639px){
+	.content h1{
+		right: 53px;
+	}
+	.content{
+		margin-top: -618px;
+	}
+
+}
+@media(max-width:930px){
+	.content h1{
+		right: 53px;
+	}
+	.content{
+		margin-top: -618px;
+	}
+
+}
+@media(min-width:480px){
+	.content h1{
+		right: 53px;
+	}
+	.content{
+		margin-top: -618px;
+	}
+
+}
+@media(min-width:400px){
+	.content h1{
+		bottom: 510px;
+	}
+	.content{
+		margin-top: -618px;
+	}
+
 }
