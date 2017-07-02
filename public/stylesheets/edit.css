@@ -25,7 +25,7 @@
 } */
 .welcome{
 	position: relative;
-    margin-top: -752px;
+    margin-top: -900px;
     font-size: 31px;
     text-align: center;
     width: 30vw;
@@ -34,13 +34,13 @@
     margin-left: 835px;
     font-family:'Autour One';
 }
-/* .input-group{
+.input-group{
 	position: relative;
     text-align: center;
     height: 20px;
-    width: 100px;
+    width: 300px;
     font-family:'Autour One';
-    /* margin-top: -760px; */
+    /* margin-top: -760px;
     /* margin-left: 850px; */
     /* border:1px solid black; */ 
 
@@ -70,6 +70,12 @@
     border:3px solid black ;
 
 }
+
+.btn-primary {
+    color: black;
+    background-color: cyan;
+    border-color: black;
+ }
 
 /* 
 #submit-login{

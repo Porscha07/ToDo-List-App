@@ -19,6 +19,7 @@ var config = require('../config/config');
 /* GET  HOME page. */
 router.get('/index', function(req, res, next) {
     var message = req.query.msg;//can substitute msg for api key, etc
+    var userName = req.query.userName;
     if(message == "added"){
         message = "Your task was added!";
     }else if(message == "updated!"){
@@ -31,6 +32,7 @@ router.get('/index', function(req, res, next) {
     connection.query(selectQuery,(error, results)=>{//query comes back with either error or results)
     //console.log("====")
         res.render('index',{
+            userName: userName,
             message: message,
             taskArray: results// what we get back from running in mySql ( selectquery)
         });
@@ -133,9 +135,9 @@ router.get('/', function(req, res) {
     res.render('sign',{ });
 });
 
+// var userName = req.body.userName;
 
 router.post('/', function(req, res) {
-
     var userName = req.body.userName;
     var password = req.body.Password;
     var hash= bcrypt.hashSync(password);
@@ -158,14 +160,17 @@ router.post('/', function(req, res) {
         }
     })
 })
+// console.log(userName);
 
 
 //**************Logging Out********************
-// Log out
-// router.get('logout', function(req, res) {
-//     req.session.user = null;
-//     res.redirect('/sign');
-// });
-
+router.get('/logout', function(req, res) {
+    // req.session.user = null;
+    var userName = req.body.userName;
+    res.redirect('/');
+});
+router.post('/logout', function(req, res) {
+    res.redirect('/index?logout')
+});
 
 module.exports = router;

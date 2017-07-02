@@ -2,8 +2,7 @@
 
 ## About
 
-
-
+To-Do for You is a web application that provides a concise and creative way to keep all of your thoughts and activities organized.
 
 ## Languages and Technologies
 
