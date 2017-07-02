@@ -58,5 +58,18 @@ a {
     font-size: 54px;
 
 }
+.btn-danger{
+	background-color: #4CAF50;
+	color:black;
+}
 
+.btn-warning{
+	background-color:#f44336;
+	color: black;
+}
+
+.btn-primary{
+	background-color: cyan;
+	color: black;
+}
  

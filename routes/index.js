@@ -41,8 +41,9 @@ router.post('/index', function(req, res) {
 });
 //add a post route "addItem to handle the form submission"
 //any form responses will be in req.body
+
 //**********How tasks are being added to the app and database*******************
-router.post('/index/addItem',(req,res)=>{
+router.post('/addItem',(req,res)=>{
     //res.json(req.body)
     var newTask = req.body.newTask;
     var dueDate = req.body.newTaskDate;
@@ -77,7 +78,7 @@ router.get('/edit/:id',(req,res)=>{
 
     });
 });
-router.post('/editItem',(req,res)=>{
+router.post('/edit/editItem',(req,res)=>{
     //res.json(req.body);
     var newTask = req.body.newTask;//req.body pulled from forms
     var newTaskDate = req.body.newTaskDate;
