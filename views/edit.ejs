@@ -20,7 +20,7 @@ Task Date: <%= task.taskDate%><hr /> -->
 				Task id: <%= task.id%><hr />
 				Task name: <%= task.taskName%><hr />
 				Task Date: <%= task.taskDate%><hr />
-				<form class="form-inline" action="/editItem?id=<%=task.id%>"method="post">
+				<form class="form-inline" action="/editItem" method="post">
 					<div class="form-group content">
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="New Task" name="newTask" value="<%=task.taskName%>/>"
@@ -38,3 +38,4 @@ Task Date: <%= task.taskDate%><hr /> -->
 </body>
 </html>
 <!-- //needed an edit.ejs in view file for the info to be rendered. -->
+<!-- /editItem?id=<%=task.id%> -->
