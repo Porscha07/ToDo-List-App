@@ -23,12 +23,12 @@ Task Date: <%= task.taskDate%><hr /> -->
 				<form class="form-inline" action="/editItem" method="post">
 					<div class="form-group content">
 						<div class="input-group">
-							<input type="text" class="form-control" placeholder="New Task" name="newTask" value="<%=task.taskName%>/>"
+							<input type="text" class="form-control" placeholder="New Task" name="newTask" value="<%=task.taskName%>"/>
 						</div>
 						<div class="input-group">
-							<input type="date" class="form-control" name="newTaskDate" value="<%task.taskDate%>/>"
+							<input type="date" class="form-control" name="newTaskDate" value="<%task.taskDate%>"/>
 						</div>
-						<input type="hidden"name="id" valye="<%=task.id%>"/>
+						<input type="hidden"name="id" value="<%=task.id%>"/>
 					</div>
 					<button type="submit" class="btn btn-primary">Edit Task</button>
 				</form>			

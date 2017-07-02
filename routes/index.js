@@ -83,13 +83,14 @@ router.post('/editItem',(req,res)=>{
     var newTask = req.body.newTask;//req.body pulled from forms
     var newTaskDate = req.body.newTaskDate;
     var idToEdit = req.query.id;//req.query- from query string.
-    var updateQuery = "UPDATE tasks SET taskName = ?, taskDate = ? WHERE id =?";
-    connection.query(updateQuery, [newTask, newTaskDate,idToEdit], (error,results)=>{
-        res.redirect('/index?msg=updated');
+    // var updateQuery = "UPDATE tasks SET taskName = ?, taskDate = ? WHERE id =?";
+    var insertQuery = "INSERT INTO tasks ( taskName, taskDate) VALUES('"+newTask+"','"+newTaskDate+"')";
+    connection.query(insertQuery, (error,results)=>{
+        res.redirect('/index?msg=updated!');
     });
 });
 
-
+// , [newTaskDate,idToEdit]
 // ******************GETTING THE REGISTER PAGE**********************
 router.get('/register', function(req, res) {
     res.render('register', {});
@@ -157,9 +158,6 @@ router.post('/', function(req, res) {
         }
     })
 })
-
-
-
 
 
 //**************Logging Out********************
