@@ -1,4 +1,6 @@
-body {
+
+
+ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   /* background-color:  coral; */
@@ -26,7 +28,12 @@ a {
 /* .container{
 	margin-top: 40px;
 } */
-
+.table th{
+	position: relative;
+	right: -65px;
+	/* padding-left: -50px; */
+	width: 100px;
+}
 
 .content{
 /* 	position: absolute;

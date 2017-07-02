@@ -1,7 +1,7 @@
 # To-Do for You
 
 If you don't want to create an account you can use the demo account below. to play around.
-Login: demo 
+Login: demo <br>
 Password: demo
 
 ## What it is
@@ -25,10 +25,9 @@ To-Do for You is a web application that provides a concise and creative way to k
 * bcrypt-nodejs (node module, used to store encrypted passwords into the database)
 * express-session (node module, used to keep the current user logged in and save information about that user)
 
+##Site Walkthrough
 
-#Site Walkthrough
-
-##Landing Page
+###Landing Page
 
 Users see a brief welcome message and can either log in or creare an account.
  <p align='center'>
@@ -36,16 +35,16 @@ Users see a brief welcome message and can either log in or creare an account.
  </p>
 
 
-##User's Home Page
+###User's Home Page
 
 Top left corner shows their name and the logout link. The user also sees the Task's box where they can add,edit,or delete tasks.
 
-<!-- <p align='center'>
-    <img src='../Images/newaccountpage.png'></img>
- </p> -->
+<p align='center'>
+    <img src='public/images/newaccount.png'></img>
+ </p>
 
 
-## Edit Tasks Page
+### Edit Tasks Page
 
  Users can view their selected task/date and make changes. 
 <p align='center'>
@@ -54,11 +53,12 @@ Top left corner shows their name and the logout link. The user also sees the Tas
 
 ##Challenges
 
-##Challenge 1:
+
+###Challenge 1:
 
 
 
-##Challenge 2:
+###Challenge 2:
 
 
 
