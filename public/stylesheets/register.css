@@ -26,7 +26,7 @@
 
 .content h1{
     position: absolute;
-    bottom: 469px;
+    bottom: 547px;
     right: 241px;
     font-size: 89px;
     text-align: center;
@@ -50,60 +50,3 @@
     border:3px solid black ;
 
 }
-
-
-#submit-login{
-	color: black;
-	background-color: lightgrey;
-}
-
-/* MEDIA QUERIES */
-/* @media(min-width:1280px){
-	.content h1{
-		right: 201px;
-    	font-size: 3em;
-    	bottom: 426px;
-	}
-	.content{
-		right: 553px;
-    	width: 1222px;
-    	font-size: 29px;
-	}
-
-}
-@media(min-width:639px){
-	.content h1{
-		right: 53px;
-	}
-	.content{
-		margin-top: -618px;
-	}
-
-}
-@media(max-width:930px){
-	.content h1{
-		right: 53px;
-	}
-	.content{
-		margin-top: -618px;
-	}
-
-}
-@media(min-width:480px){
-	.content h1{
-		right: 63	px;
-	}
-	.content{
-		margin-top: -618px;
-	}
-
-}
-@media(min-width:400px){
-	.content h1{
-		bottom: 565px;
-	}
-	.content{
-		margin-top: -618px;
-	}
-
-} */

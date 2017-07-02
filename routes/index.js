@@ -42,7 +42,7 @@ router.post('/index', function(req, res) {
 //add a post route "addItem to handle the form submission"
 //any form responses will be in req.body
 //**********How tasks are being added to the app and database*******************
-router.post('/addItem',(req,res)=>{
+router.post('/index/addItem',(req,res)=>{
     //res.json(req.body)
     var newTask = req.body.newTask;
     var dueDate = req.body.newTaskDate;
@@ -51,7 +51,7 @@ router.post('/addItem',(req,res)=>{
     //res.send(insertQuery);//way to test your query
     connection.query(insertQuery,(error,results)=>{
         if(error) throw error;
-        res.redirect('/?msg=added');
+        res.redirect('/index?msg=added');
     });
 });
 //***********How tasks are being deleted from the app and database***************
@@ -60,7 +60,7 @@ router.get('/delete/:id',(req,res)=>{
     var idToDelete=req.params.id;
     var deleteQuery ="DELETE from tasks WHERE id= " + idToDelete;
     connection.query(deleteQuery,(error,results)=>{
-        res.redirect('/?msg=deleted')
+        res.redirect('/index?msg=deleted')
 
     });
     //res.send(idToDelete);
@@ -84,7 +84,7 @@ router.post('/editItem',(req,res)=>{
     var idToEdit = req.query.id;//req.query- from query string.
     var updateQuery = "UPDATE tasks SET taskName = ?, taskDate = ? WHERE id =?";
     connection.query(update, [newTask, newTaskDate,idToEdit], (error,results)=>{
-        res.redirect('/?msg=updated');
+        res.redirect('/index?msg=updated');
     });
 });
 

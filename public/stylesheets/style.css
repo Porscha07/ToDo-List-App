@@ -2,6 +2,10 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   /* background-color:  coral; */
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .container-fluid{
 	/* background-image: url('../images/toDo-background.jpeg'); */
@@ -9,11 +13,13 @@ body {
 }
 
 .img-responsive{
-	width: 1833px;
+	width: 99vw;
 	border: 9px solid black;
 	padding-right: 0px;
 	padding-left:0px;
+	height: 102vh;
 }
+
 a {
   color: #00B7FF;
 }
@@ -23,7 +29,7 @@ a {
 
 
 .content{
-	position: absolute;
+/* 	position: absolute;
 	border: 3px solid dodgerblue;
 	background-color: dodgerblue;
 	margin-left: -2px;
@@ -32,13 +38,24 @@ a {
     font-size: 21px;
     font-family: Autour One;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 30px; */
+    position: absolute;
+	border: 3px solid dodgerblue;
+	background-color: dodgerblue;
+	margin-left: 515px;
+	margin-top: -900px;
+	text-align: center;
+    font-size: 24px;
+    font-family:'Autour One';
+    border:3px solid black ;
+    height: 53vh;
+    width:55vw;
 }
 
 .content h1{
 	font-family: Autour One;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 54px;
 
 }
 
