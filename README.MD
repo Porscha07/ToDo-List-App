@@ -26,14 +26,8 @@ To-Do for You is a web application that provides a concise and creative way to k
 * express-session (node module, used to keep the current user logged in and save information about that user)
 
 ## Site Walkthrough
-<!--  <p align='center'>
-    <img src='public/images/homepage.png'></img>
- </p> -->
 
 ## Landing Page
-<!--  <p align='center'>
-    <img src='public/images/homepage.png'></img>
- </p> -->
 
 Users see a brief welcome message and can either log in or creare an account.
  <p align='center'>
@@ -57,9 +51,22 @@ Top left corner shows their name and the logout link. The user also sees the Tas
 
 ## Challenges
 
-
 ## Challenge 1:
+My first challenge occured while working with the bcrypt module to ensure password security as users logged in. Below you will see the code, where I explicitly organized an if else statement to ensure all potential sign in issues were covered.
+<p align='center'>
+	<img src='public/images/Challenge-1-problem.png'></img>
+</p>
 
+Below, you will also see a snippet of what the URL rendered. This was slightly frustrating because I knew this issue would be a massive security breach and not comply with my MVP(minimal viable product) requirements.
+<p align='center'>
+	<img src='public/images/challenge-1-problemUrl/png'></img>
+</p>
+
+## Solution 1:
+If I am having a functionality issue, my thought process is to always comb through the .js(javascript) file first. If I am still having the same issue, after performing several unit test or console.logs, I move on to the structure pages(.html).I circled back to my .ejs file(templating page) and I compared my post route syntax to the other routes that were functioning properly and I found the error here.
+<p align="center">
+	<img src='public/images/challenge1-solution/png'></img>
+</p> 
 
 
 ## Challenge 2:
