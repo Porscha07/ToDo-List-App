@@ -25,17 +25,22 @@ To-Do for You is a web application that provides a concise and creative way to k
 * bcrypt-nodejs (node module, used to store encrypted passwords into the database)
 * express-session (node module, used to keep the current user logged in and save information about that user)
 
-
 ##Site Walkthrough
+<!--  <p align='center'>
+    <img src='public/images/homepage.png'></img>
+ </p> -->
 
 ##Landing Page
+<!--  <p align='center'>
+    <img src='public/images/homepage.png'></img>
+ </p> -->
 
 Users see a brief welcome message and can either log in or creare an account.
  <p align='center'>
     <img src='public/images/homepage.png'></img>
  </p>
 
-##User's Home Page
+## User's Home Page
 
 Top left corner shows their name and the logout link. The user also sees the Task's box where they can add,edit,or delete tasks.
 
