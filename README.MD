@@ -70,6 +70,17 @@ If I am having a functionality issue, my thought process is to always comb throu
 
 
 ## Challenge 2:
+I was having issues  editing tasks via my edit page and having them updated on my user's home page. My initial thought process was to pass in an updateQuery as that was the goal of the page(funtionality-wise). I wanted to update mySQL database with the newly edited information. 
+<p align="center">
+	<img src='public/images/todoproblem.png'></img>
+</p>
+
+## Solution 2:
+After running various tests on my updatequery, I decided to take a step back and simplify my thought process on what I wanted my code to do. I find writing in psuedo-code to be very helpful when I tend to over think how I can re-structure potential solutions. With that in mind, I decided to change my updatequery to an insertquery so my information could be added into my database and ultimately rendered on the user's home page.
+<p align="center">
+	<img src='public/images/todosolution.png'></img>
+</p>
+
 
 
 
