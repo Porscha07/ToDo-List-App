@@ -1,6 +1,6 @@
 # To-Do for You
 
-If you don't want to create an account you can use the demo account below. to play around.
+If you don't want to create an account you can use the demo account below to play around.<br>
 Login: demo 
 Password: demo
 
