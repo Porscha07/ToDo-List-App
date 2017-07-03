@@ -59,13 +59,13 @@ My first challenge occured while working with the bcrypt module to ensure passwo
 
 Below, you will also see a snippet of what the URL rendered. This was slightly frustrating because I knew this issue would be a massive security breach and not comply with my MVP(minimal viable product) requirements.
 <p align='center'>
-	<img src='public/images/challenge-1-problemUrl/png'></img>
+	<img src='public/images/challenge-1-problemUrl.png'></img>
 </p>
 
 ## Solution 1:
 If I am having a functionality issue, my thought process is to always comb through the .js(javascript) file first. If I am still having the same issue, after performing several unit test or console.logs, I move on to the structure pages(.html).I circled back to my .ejs file(templating page) and I compared my post route syntax to the other routes that were functioning properly and I found the error here.
 <p align="center">
-	<img src='public/images/challenge1-solution/png'></img>
+	<img src='public/images/challenge1-solution.png'></img>
 </p> 
 
 
