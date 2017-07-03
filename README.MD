@@ -1,12 +1,12 @@
 # To-Do for You
 
 If you don't want to create an account you can use the demo account below to play around.<br>
-Login: demo 
+Login: demo <br>
 Password: demo
 
 ## What it is
 
-To-Do for You is a web application that provides a concise and creative way to keep all of your thoughts and activities organized. Users can create an account or sign in.Users also have the ability to add,edit and delete tasks.
+To-Do for You is a web application that provides a concise and creative way to keep all of your thoughts and activities organized. Users can create an account or sign in. Users also have the ability to add,edit and delete tasks.
 
 ## Languages and Technologies
 
@@ -36,7 +36,7 @@ Users see a brief welcome message and can either log in or creare an account.
 
 ## User's Home Page
 
-Top left corner shows their name and the logout link. The user also sees the Task's box where they can add,edit,or delete tasks.
+Top left corner shows their name and the logout link. The user also sees the task's box where they can add,edit,or delete tasks.
 
 <p align='center'>
     <img src='public/images/newaccount.png'></img>
