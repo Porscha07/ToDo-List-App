@@ -86,3 +86,40 @@ a {
     width: 275px;
     background-color: cyan;
  }
+/* MEDIA QUERIES */
+
+
+/* /* @media (max-width:2000px){ */
+/* @media screen and (max-width: 2000px) {
+    .content h1{
+    	height: 11vh;
+    }   */
+/* }  */
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	.content h1{
+		height: 8vh;
+	}
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+/
