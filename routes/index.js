@@ -4,6 +4,9 @@ var router = express.Router();
 //it hold a single object that has your MySQL credentials
 var bcrypt = require('bcrypt-nodejs');
 var config = require('../config/config');
+// var session = require ('session');
+
+
 
     //include your mysql module. we got this via npm
     var mysql = require('mysql');// a way for mysql to talk to express
@@ -19,7 +22,7 @@ var config = require('../config/config');
 /* GET  HOME page. */
 router.get('/index', function(req, res, next) {
     var message = req.query.msg;//can substitute msg for api key, etc
-    var userName = req.query.userName;
+    // console.log(req);
     if(message == "added"){
         message = "Your task was added!";
     }else if(message == "updated!"){
@@ -28,18 +31,57 @@ router.get('/index', function(req, res, next) {
         message ="Your task was deleted!";
     }
     var selectQuery = "SELECT * FROM tasks";
+    console.log(req.session.userName);
     //console.log("==========About to run query=========="");
     connection.query(selectQuery,(error, results)=>{//query comes back with either error or results)
     //console.log("====")
         res.render('index',{
-            userName: userName,
+            userName: req.session.userName,
             message: message,
             taskArray: results// what we get back from running in mySql ( selectquery)
         });
     })
-});
+    // var userselectQuery = "SELECT * FROM users WHERE userName = ?";
+    // //console.log("==========About to run query=========="");
+    // connection.query(userselectQuery,(error, results)=>{//query comes back with either error or results)
+    // //console.log("====")
+    //     res.render('index',{
+    //         userName: req.body.userName
+    //     });
+    });
 router.post('/index', function(req, res) {
-    res.redirect('/index?login=successful')
+    // console.log(req.session);
+  console.log('post /')
+    var userName = req.body.username;
+    // console.log(req.body);
+    console.log(userName);
+    var password = req.body.password;
+    var hash= bcrypt.hashSync(password);
+    var selectQuery = `SELECT * FROM users WHERE userName='${userName}'`;
+    // var selectQuery = "SELECT userName, Password FROM users "
+    connection.query(selectQuery, (error, results)=> {
+        if (error){ throw error};
+        if (results.length == 1) {
+            var match = bcrypt.compareSync(password, results[0].Password);
+            if (match){
+                 console.log(results[0].userName);
+                req.session.loggedin = true;
+                req.session.userName = results[0].userName;
+                res.redirect('/index?login=successfull'); 
+            }else {
+                res.redirect('/index?login=incorrect');
+            }
+        }else {
+            res.redirect('/');
+        }
+    })
+        // var userselectQuery = "SELECT * FROM users WHERE userName = ?";
+    // //console.log("==========About to run query=========="");
+    // connection.query(userselectQuery,(error, results)=>{//query comes back with either error or results)
+    // //console.log("====")
+    //     res.render('index',{
+    //         userName: req.body.userName
+    //     });
 });
 //add a post route "addItem to handle the form submission"
 //any form responses will be in req.body
@@ -115,13 +157,8 @@ router.post('/register', (req,res)=>{
     // res.send(insertQuery);
     connection.query(insertQuery, [firstName, lastName, userName, email, hash, confpassword],(error, results)=>{
         if(error) throw error;
-        // console.log(results);
-        req.body.firstName = firstName;
-        req.body.lastName = lastName;
-        req.body.userName = userName;
-        req.body.email = email;
-        req.body.confpassword = confpassword
-        // req.session.loggedin = true;
+        req.session.loggedin = true;
+        req.session.userName = userName;
         res.redirect('/index?newaccount=created');
 
     });
@@ -133,40 +170,16 @@ router.post('/register', (req,res)=>{
 
 router.get('/', function(req, res) {
     res.render('sign',{ });
+    console.log("sign in")
 });
 
-// var userName = req.body.userName;
-
-router.post('/', function(req, res) {
-    var userName = req.body.userName;
-    var password = req.body.Password;
-    var hash= bcrypt.hashSync(password);
-    var selectQuery = "SELECT * FROM users WHERE userName = ?";
-    // var selectQuery = "SELECT userName, Password FROM users "
-    connection.query(selectQuery, [userName],(error, results)=> {
-        if (error){ throw error};
-        if (results.length == 1) {
-            var match = bcrypt.compareSync(password, results[0].password);
-
-            if (match){
-                req.session.loggedin = true;
-                req.session.userName = results.userName;
-                res.redirect('/index?login=successfull'); 
-            }else {
-                res.redirect('/index?login=incorrect');
-            }
-        }else {
-            res.redirect('/');
-        }
-    })
-})
-// console.log(userName);
 
 
 //**************Logging Out********************
 router.get('/logout', function(req, res) {
     // req.session.user = null;
-    var userName = req.body.userName;
+    req.session.userName = undefined;
+    req.session.loggedin = undefined;
     res.redirect('/');
 });
 router.post('/logout', function(req, res) {
