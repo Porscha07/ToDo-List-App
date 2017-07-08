@@ -83,13 +83,13 @@ a {
 /* MEDIA QUERIES */
 
 
-/* /* @media (max-width:2000px){ */
-/* @media screen and (max-width: 2000px) {
+/* @media (max-width:2000px){
+@media screen and (max-width: 2000px) {
     .content h1{
     	height: 11vh;
-    }   */
-/* }  */
-/* Large desktops and laptops */
+    }  
+}  */
+/* Large desktops and laptops
 /* @media (min-width: 1200px) {
 	
 
