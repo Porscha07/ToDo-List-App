@@ -1,126 +1,50 @@
-
 .container-fluid{
-	/* background-image: url('../images/toDo-background.jpeg'); */
 	background-repeat: no-repeat;
+	position: relative;
 }
 
 .img-responsive{
 	width: 99vw;
-	border: 9px solid black;
-	padding-right: 0px;
-	padding-left:0px;
+	border: 1em solid black;
+	padding-right: 0em;
+	padding-left:0em;
 	height: 102vh;
 }
 
-.form-group{
-	margin-bottom: 11px;
+
+.form-group, .sign-up{
+	margin-bottom: 0em;
     text-align: left;
 }
 
-.sign-up{
-	text-align: left;
-}
-.sign-up a{
-	color: white;
-}
-
-.content h1{
+.signInBox {
     position: absolute;
-    bottom: 469px;
-    right: 241px;
-    font-size: 89px;
-    text-align: center;
-    /* margin: auto; */
-    font-family:'Autour One';
-}
-.content h3{
-	font-size: 47px;
-	font-family:'Autour One';
-}
-
-.content{
-	position: absolute;
-	border: 3px solid dodgerblue;
+    font-size: 2em;
+    /* border: 3px solid dodgerblue; */
 	background-color: dodgerblue;
-	margin-left: 515px;
-	margin-top: -777px;
-	text-align: center;
-    font-size: 24px;
+	left: 20%;
+    top: 30%; 
+    width: 50%;
     font-family:'Autour One';
     border:3px solid black ;
-
+    text-align: center;
+    /* margin-left: 13em;  */
+	/* margin-top: 4em;  */
+   
+} 
+.signInBox h3{
+	font-size: 2em;
+	font-family:'Autour One';
 }
-
 
 #submit-login{
 	color: black;
 	background-color: lightgrey;
 }
 
-/* MEDIA QUERIES */
-
-/* @media(max-width:400px){
-	.content h1{
-		top: -10vh;
-		right: 30px;
-	} 
-} */
-/* @media(min-width:400px) and (max-width:600px){
-	.content h1{
-		right: 0px;
-		top: -13vh;
-		font-size: 65px;
-	}
-
-	.content{
-		font-size: 25px;
-		right: 230px;
-		top: 90vh;
-		
-	}
-} */
-
-
-/* @media(max-width:3760px){ /* Desktop Monitors */
-/* 	.content h1{
-		right: 228px;
-		top: -115px;
-	}
-	.content{
-		right: 1145px;
-    	width: 1222px;
-    	font-size: 29px;
-    	top: 1400px;
-	} */
-
-
-
-/* Landscape tablets and medium desktops */
-/* @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.content h1{
-		top: -10vh;
-	}
-} */
-
-
 /* Portrait phones and smaller */
-/* @media (max-width: 480px) {
-
-}
-
-@media (max-width: 640px) {
-
-}
-
-/* Landscape phones and portrait tablets */
-@media (min-width:640px) and (max-width: 768px) {
-
-}
-/* Portrait tablets and small desktops
-@media (min-width: 768px) and (max-width:992px){
-
-}
-
-@media (min-width: 992px) and (max-width:1200px) {
-
-}
+/* @media (max-width: 526px) {
+	.signInBox{
+		margin-left: 13em;
+	}
+} */
