@@ -8,7 +8,7 @@
 	border: 1em solid black;
 	padding-right: 0em;
 	padding-left:0em;
-	height: 102vh;
+	height: 100vh;
 }
 
 
@@ -28,8 +28,6 @@
     font-family:'Autour One';
     border:3px solid black ;
     text-align: center;
-    /* margin-left: 13em;  */
-	/* margin-top: 4em;  */
    
 } 
 .signInBox h3{

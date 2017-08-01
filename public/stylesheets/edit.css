@@ -6,33 +6,36 @@
 
 .img-responsive{
 	width: 99vw;
-	border: 9px solid black;
+	border: 1em solid black;
 	padding-right: 0px;
 	padding-left:0px;
-	height: 102vh;
+	height: 100vh;
+}
+.img-responsive{
+    width: 99vw;
+    border: 1em solid black;
+    padding-right: 0em;
+    padding-left:0em;
+    height: 100vh;
 }
 
 .form-group{
-	margin-bottom: 11px;
-    text-align: left;
+	/* margin-bottom: 11px; */
+  /* text-align: left; */
+}
+.form-control{
+  margin-top: 1em;
 }
 
-/* .sign-up{
-	text-align: left;
-}
-.sign-up a{
-	color: white;
-} */
-.welcome{
-	position: relative;
-    margin-top: -900px;
-    font-size: 31px;
-    text-align: center;
-    width: 30vw;
-    border: 2px solid black;
+.edit{
+    position: absolute;
     background-color: dodgerblue;
-    margin-left: 835px;
+    left: 20%;
+    top: 50%; 
+    width: 50%;
     font-family:'Autour One';
+    border:3px solid black ;
+    text-align: center;
 }
 .input-group{
 	position: relative;
@@ -40,9 +43,10 @@
     height: 20px;
     width: 300px;
     font-family:'Autour One';
-    /* margin-top: -760px;
-    /* margin-left: 850px; */
-    /* border:1px solid black; */ 
+    margin-top: -760px;
+    margin-left: 850px;
+    /* border:1px solid black; 
+}
 
 .content h1{
     position: absolute;
@@ -50,7 +54,7 @@
     right: 241px;
     font-size: 89px;
     text-align: center;
-    /* margin: auto; */
+    
     font-family:'Autour One';
 }
 .content h3{
@@ -77,8 +81,3 @@
     border-color: black;
  }
 
-/* 
-#submit-login{
-	color: black;
-	background-color: lightgrey;
-} */

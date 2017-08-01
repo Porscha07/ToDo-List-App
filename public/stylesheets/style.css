@@ -1,7 +1,6 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  /* background-color:  coral; */
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
@@ -39,7 +38,7 @@ a {
     font-family: Autour One;
     font-weight: bold;
     font-size: 30px; */
-    position: absolute;
+ /*    position: absolute;
 	border: 3px solid dodgerblue;
 	background-color: dodgerblue;
 	margin-left: 515px;
@@ -49,7 +48,17 @@ a {
   font-family:'Autour One';
   border:3px solid black ;
   height: 53vh;
-  width:55vw;
+  width:55vw; */
+   position: absolute;
+    font-size: 2em;
+    /* border: 3px solid dodgerblue; */
+  background-color: dodgerblue;
+  left: 20%;
+    top: 30%; 
+    width: 50%;
+    font-family:'Autour One';
+    border:3px solid black ;
+    text-align: center;
 }
 
 .content h1{
