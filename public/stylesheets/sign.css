@@ -1,4 +1,4 @@
-.container-fluid{
+/* .container-fluid{
 	background-repeat: no-repeat;
 	position: relative;
 }
@@ -20,7 +20,7 @@
 .signInBox {
     position: absolute;
     font-size: 2em;
-    /* border: 3px solid dodgerblue; */
+    border: 3px solid dodgerblue;
 	background-color: dodgerblue;
 	left: 20%;
     top: 30%; 
@@ -38,11 +38,53 @@
 #submit-login{
 	color: black;
 	background-color: lightgrey;
+} */
+
+
+.container-fluid{
+	/* background-image: url('../images/toDo-background.jpeg'); */
+	background-repeat: no-repeat;
 }
 
-/* Portrait phones and smaller */
-/* @media (max-width: 526px) {
-	.signInBox{
-		margin-left: 13em;
-	}
-} */
+.img-responsive{
+	width: 99vw;
+	border: 1em solid black;
+	padding-right: 0em;
+	padding-left:0em;
+	height: 100vh;
+}
+
+.form-group{
+	margin-bottom: 11px;
+    text-align: left;
+}
+
+.sign-up{
+	text-align: left;
+}
+.sign-up a{
+	color: white;
+}
+
+.form-group h1{
+    text-align: center;
+    font-size: 2em;
+  }
+
+.content h3{
+	font-size: 47px;
+	font-family:'Autour One';
+}
+
+.content{
+    position: absolute;
+    font-size: 2em;
+	background-color: dodgerblue;
+	left: 20%;
+    top: 30%; 
+    width: 50%;
+    font-family:'Autour One';
+    border:3px solid black ;
+    text-align: center;
+
+}
