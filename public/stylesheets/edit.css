@@ -1,6 +1,5 @@
 
 .container-fluid{
-	/* background-image: url('../images/toDo-background.jpeg'); */
 	background-repeat: no-repeat;
 }
 
@@ -11,13 +10,7 @@
 	padding-left:0px;
 	height: 100vh;
 }
-.img-responsive{
-    width: 99vw;
-    border: 1em solid black;
-    padding-right: 0em;
-    padding-left:0em;
-    height: 100vh;
-}
+
 
 .form-group{
 	/* margin-bottom: 11px; */
@@ -31,49 +24,13 @@
     position: absolute;
     background-color: dodgerblue;
     left: 20%;
-    top: 50%; 
+    top: 38%; 
     width: 50%;
     font-family:'Autour One';
     border:3px solid black ;
     text-align: center;
 }
-.input-group{
-	position: relative;
-    text-align: center;
-    height: 20px;
-    width: 300px;
-    font-family:'Autour One';
-    margin-top: -760px;
-    margin-left: 850px;
-    /* border:1px solid black; 
-}
 
-.content h1{
-    position: absolute;
-    bottom: 469px;
-    right: 241px;
-    font-size: 89px;
-    text-align: center;
-    
-    font-family:'Autour One';
-}
-.content h3{
-	font-size: 47px;
-	font-family:'Autour One';
-}
-
-.content{
-	position: absolute;
-	border: 3px solid dodgerblue;
-	background-color: dodgerblue;
-	margin-left: 515px;
-	margin-top: -777px;
-	text-align: center;
-    font-size: 24px;
-    font-family:'Autour One';
-    border:3px solid black ;
-
-}
 
 .btn-primary {
     color: black;

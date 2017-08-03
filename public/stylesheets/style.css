@@ -7,51 +7,25 @@ body {
   padding-bottom: 0px;
 }
 .container-fluid{
-	/* background-image: url('../images/toDo-background.jpeg'); */
 	background-repeat: no-repeat;
 }
 
 .img-responsive{
-	width: 99vw;
-	border: 9px solid black;
-	padding-right: 0px;
-	padding-left:0px;
-	height: 102vh;
+    width: 99vw;
+    border: 1em solid black;
+    padding-right: 0em;
+    padding-left:0em;
+    height: 100vh;
 }
 
 a {
   color: #00B7FF;
 }
-/* .container{
-	margin-top: 40px;
-} */
 
 
-.content{
-/* 	position: absolute;
-	border: 3px solid dodgerblue;
-	background-color: dodgerblue;
-	margin-left: -2px;
-	margin-top: 468px;
-	text-align: center;
-    font-size: 21px;
-    font-family: Autour One;
-    font-weight: bold;
-    font-size: 30px; */
- /*    position: absolute;
-	border: 3px solid dodgerblue;
-	background-color: dodgerblue;
-	margin-left: 515px;
-	margin-top: -1200px;
-	text-align: center;
-  font-size: 24px;
-  font-family:'Autour One';
-  border:3px solid black ;
-  height: 53vh;
-  width:55vw; */
+.tasks{
    position: absolute;
     font-size: 2em;
-    /* border: 3px solid dodgerblue; */
   background-color: dodgerblue;
   left: 20%;
     top: 30%; 
@@ -61,12 +35,23 @@ a {
     text-align: center;
 }
 
-.content h1{
+.form-group{
+  /* margin-bottom: 11px; */
+  /* text-align: left; */
+}
+.form-control{
+  margin-top: 1em;
+}
+
+
+
+.tasks h1{
 	font-family: Autour One;
     font-weight: bold;
     font-size: 54px;
 
 }
+
 .btn-danger{
 	background-color: #4CAF50;
 	color:black;
@@ -83,38 +68,12 @@ a {
 }
  .welcome-msg{
  	position: relative;
-    top: -1350px;
+    top: -95em;
     border: 1px solid black;
-    width: 275px;
+    width: 15em;
     background-color: cyan;
- }
- 
-/* MEDIA QUERIES */
-
-
-/* @media (max-width:2000px){
-@media screen and (max-width: 2000px) {
-    .content h1{
-    	height: 11vh;
-    }  
-}  */
-/* Large desktops and laptops
-/* @media (min-width: 1200px) {
-	
+    margin-left: 5em;
 }
-/* Landscape tablets and medium desktops */
-/* @media (min-width: 992px) and (max-width: 1199px) {
-} */
 
-/* Portrait tablets and small desktops */
-/* @media (min-width: 768px) and (max-width: 991px) {
-} */
 
-/* Landscape phones and portrait tablets */
-/* @media (max-width: 767px) {
-} */
-
-/* Portrait phones and smaller */
-/* @media (max-width: 480px) {
-} */
 

@@ -19,22 +19,22 @@
 			 	<h2>Welcome,<%=userName%>!</h2>
 				<h2><a href="/logout">Log Out</h2></a>
 			</div>
-			<div class="col-sm-12 text-center content">
+			<div class="col-sm-6 tasks">
 				<h3><%= message%></h3>
 				<h1>To-Do for YOU- TASKS</h1>
-				<form class="form-inline" action="addItem" method="post">
+				<form class action="/addItem" method="post">
 					<div class="form-group">
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="New Task" name="newTask"/>
 						</div>
 						<div class="input-group">
 							<input type="date" class="form-control" name="newTaskDate"/>
-						</div>
+					</div>
 						<button type="submit"class="btn btn-primary">Add New Task</button>
 				</form>
 			</div>
 			<div class="row">
-			  <div class="col-sm-12">
+			  <div class="col-sm-6">
 			  	<table class="table">
 			  	<tr>
 				  	<th>Task Name</th>

@@ -1,48 +1,5 @@
-/* .container-fluid{
-	background-repeat: no-repeat;
-	position: relative;
-}
-
-.img-responsive{
-	width: 99vw;
-	border: 1em solid black;
-	padding-right: 0em;
-	padding-left:0em;
-	height: 100vh;
-}
-
-
-.form-group, .sign-up{
-	margin-bottom: 0em;
-    text-align: left;
-}
-
-.signInBox {
-    position: absolute;
-    font-size: 2em;
-    border: 3px solid dodgerblue;
-	background-color: dodgerblue;
-	left: 20%;
-    top: 30%; 
-    width: 50%;
-    font-family:'Autour One';
-    border:3px solid black ;
-    text-align: center;
-   
-} 
-.signInBox h3{
-	font-size: 2em;
-	font-family:'Autour One';
-}
-
-#submit-login{
-	color: black;
-	background-color: lightgrey;
-} */
-
 
 .container-fluid{
-	/* background-image: url('../images/toDo-background.jpeg'); */
 	background-repeat: no-repeat;
 }
 
@@ -66,25 +23,22 @@
 	color: white;
 }
 
-.form-group h1{
+.form-group h3{
     text-align: center;
     font-size: 2em;
   }
-
-.content h3{
-	font-size: 47px;
-	font-family:'Autour One';
-}
+.form-group p{
+  	text-align: center;
+    font-size: 1em;
+  }
 
 .content{
     position: absolute;
-    font-size: 2em;
-	background-color: dodgerblue;
-	left: 20%;
-    top: 30%; 
+    background-color: dodgerblue;
+    left: 20%;
+    top: 38%; 
     width: 50%;
     font-family:'Autour One';
     border:3px solid black ;
     text-align: center;
-
 }

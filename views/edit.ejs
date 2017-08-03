@@ -9,20 +9,16 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-				<img src="../images/toDo-background.jpeg" alt="tech" class="img-responsive"/>
-			<div class="col-sm-12 edit">
+			<img src="../images/toDo-background.jpeg" alt="tech" class="img-responsive"/>
+			<div class="col-sm-6 edit">
 				<h1>**Edit Tasks Here**</h1>
 				Task id: <%= task.id%><hr />
 				Task name: <%= task.taskName%><hr />
 				Task Date: <%= task.taskDate%><hr />
-				<form class="form-inline" action="/editItem" method="post">
+				<form action="/editItem" method="post">
 					<div class="form-group content">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="New Task" name="newTask" value="<%=task.taskName%>"/>
-						</div>
-						<div class="input-group">
-							<input type="date" class="form-control" name="newTaskDate" value="<%task.taskDate%>"/>
-						</div>
+						<input type="text" class="form-control" placeholder="New Task" name="newTask" value="<%=task.taskName%>"/>
+						<input type="date" class="form-control" name="newTaskDate" value="<%task.taskDate%>"/>
 						<input type="hidden"name="id" value="<%=task.id%>"/>
 					</div>
 					<button type="submit" class="btn btn-primary">Edit Task</button>
