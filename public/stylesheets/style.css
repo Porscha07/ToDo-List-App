@@ -23,16 +23,17 @@ a {
 }
 
 
-.tasks{
+#tasks{
    position: absolute;
     font-size: 2em;
   background-color: dodgerblue;
   left: 20%;
     top: 30%; 
-    width: 50%;
+    width: 60% ;
     font-family:'Autour One';
     border:3px solid black ;
     text-align: center;
+    height: 67%;
 }
 
 .form-group{
@@ -45,7 +46,7 @@ a {
 
 
 
-.tasks h1{
+#tasks h1{
 	font-family: Autour One;
     font-weight: bold;
     font-size: 54px;
@@ -66,13 +67,27 @@ a {
 	background-color: cyan;
 	color: black;
 }
- .welcome-msg{
- 	position: relative;
-    top: -95em;
+ #welcome-msg{
+ 	position: absolute;
+    top: 12%;
     border: 1px solid black;
-    width: 15em;
+    width: 260px;
     background-color: cyan;
     margin-left: 5em;
+}
+
+
+
+@media only screen and (min-width:750px){
+ #tasks{
+    font-size: 2em;
+    top: 25%;
+    width: 56% ;
+  }
+ #welcome-msg{
+    top: 10%;
+    /* width: 20px%; */
+  }
 }
 
 

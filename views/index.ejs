@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>To-Do For You Task Page</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
 	<!-- Custom CSS -->
@@ -15,11 +14,11 @@
 	<div class="container-fluid">
 		<div class="row">
 			<img src="../images/toDo-background.jpeg" alt="tech" class="img-responsive">
-			<div class="welcome-msg">
+			<div class"col-sm-2" id="welcome-msg">
 			 	<h2>Welcome,<%=userName%>!</h2>
 				<h2><a href="/logout">Log Out</h2></a>
 			</div>
-			<div class="col-sm-6 tasks">
+			<div id="tasks" class="col-sm-6 ">
 				<h3><%= message%></h3>
 				<h1>To-Do for YOU- TASKS</h1>
 				<form class action="/addItem" method="post">
@@ -34,13 +33,13 @@
 				</form>
 			</div>
 			<div class="row">
-			  <div class="col-sm-6">
+			  <div class="col-sm-12">
 			  	<table class="table">
 			  	<tr>
-				  	<th>Task Name</th>
-				  	<th>Task Due Date</th>
-				  	<th>Edit</th>
-				  	<th>Delete</th>
+				  	<th class="text-center">Task Name</th>
+				  	<th class="text-center">Task Due Date</th>
+				  	<th class="text-center">Edit</th>
+				  	<th class="text-center">Delete</th>
 			  	</tr>
 			<% for (let i = 0; i<taskArray.length; i++){ %>
 			  	<tr>
