@@ -125,11 +125,14 @@ router.get('/edit/:id',(req,res)=>{
 router.post('/editItem',(req,res)=>{
     //res.json(req.body);
     var newTask = req.body.newTask;//req.body pulled from forms
+    console.log(newTask)
     var newTaskDate = req.body.newTaskDate;
-    var idToEdit = req.query.id;//req.query- from query string.
-    // var updateQuery = "UPDATE tasks SET taskName = ?, taskDate = ? WHERE id =?";
-    var insertQuery = "INSERT INTO tasks ( taskName, taskDate) VALUES('"+newTask+"','"+newTaskDate+"')";
-    connection.query(insertQuery, (error,results)=>{
+    console.log(newTaskDate)
+    var idToEdit = req.body.id;//req.query- from query string.
+    console.log(idToEdit)
+    var updateQuery = "UPDATE tasks SET taskName ='"+newTask+"', taskDate ='"+newTaskDate+"' WHERE id ="+idToEdit;
+    // var insertQuery = "INSERT INTO tasks ( taskName, taskDate) VALUES('"+newTask+"','"+newTaskDate+"')";
+    connection.query(updateQuery, (error,results)=>{
         res.redirect('/index?msg=updated!');
     });
 });

@@ -34,6 +34,7 @@ a {
     border:3px solid black ;
     text-align: center;
     height: 67%;
+    overflow: auto;
 }
 
 .form-group{
@@ -71,7 +72,7 @@ a {
  	position: absolute;
     top: 12%;
     border: 1px solid black;
-    width: 260px;
+    width: 185px;
     background-color: cyan;
     margin-left: 5em;
 }
