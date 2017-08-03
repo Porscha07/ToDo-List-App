@@ -37,7 +37,9 @@ a {
     overflow: auto;
 }
 
-.form-group{
+.input-group{
+  margin-left: 33em;
+  margin-bottom: 10px;
   /* margin-bottom: 11px; */
   /* text-align: left; */
 }
@@ -67,6 +69,7 @@ a {
 .btn-primary{
 	background-color: cyan;
 	color: black;
+  margin-left: 0em;
 }
  #welcome-msg{
  	position: absolute;
