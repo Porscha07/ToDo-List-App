@@ -5,6 +5,8 @@ body {
   padding-right: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
+  overflow-y: scroll;
+   overflow-x: scroll;
 }
 .container-fluid{
 	background-repeat: no-repeat;
@@ -26,8 +28,8 @@ a {
 #tasks{
    position: absolute;
     font-size: 2em;
-  background-color: dodgerblue;
-  left: 20%;
+    background-color: dodgerblue;
+    left: 20%;
     top: 30%; 
     width: 60% ;
     font-family:'Autour One';
@@ -45,6 +47,7 @@ a {
 }
 .form-control{
   margin-top: 1em;
+  width: 25em;
 }
 
 
@@ -91,6 +94,17 @@ a {
  #welcome-msg{
     top: 10%;
     /* width: 20px%; */
+  }
+}
+@media only screen and (min-width:400px){
+  .form-control{
+  margin-left: -31em;
+  padding-right:: 394px;
+  width: 17em;
+  }
+  .input-group{
+    margin-left: 18em;
+    width: 75%;
   }
 }
 
