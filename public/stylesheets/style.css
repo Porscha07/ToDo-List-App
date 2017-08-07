@@ -40,10 +40,14 @@ a {
 }
 
 .input-group{
-  margin-left: 20em;
+  margin-left: 26em;
   margin-bottom: 10px;
   /* margin-bottom: 11px; */
   /* text-align: left; */
+  width: 39%;
+}
+.task-input{
+  margin-left: 22em;
 }
 .form-control{
   margin-top: 1em;
