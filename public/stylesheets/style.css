@@ -50,8 +50,8 @@ a {
   margin-left: 29em;
 }
 .form-group{
-  width: 71%;
-  margin-left: -25em;
+  width: 65%;
+  margin-left: 2em;
 }
 .form-control{
   width: 57%;
@@ -78,7 +78,7 @@ a {
 .btn-primary{
 	background-color: cyan;
 	color: black;
-  margin-left: 10em;
+  margin-left: 2em;
 }
  #welcome-msg{
  	position: absolute;
