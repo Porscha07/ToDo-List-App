@@ -51,11 +51,11 @@ a {
 }
 .form-group{
   width: 71%;
-  margin-left: -36em;
+  margin-left: -25em;
 }
 .form-control{
   width: 57%;
-  margin-left: -36em;
+  margin-left: -25em;
 }
 
 #tasks h1{
@@ -78,7 +78,7 @@ a {
 .btn-primary{
 	background-color: cyan;
 	color: black;
-  margin-left: -23em;
+  margin-left: 10em;
 }
  #welcome-msg{
  	position: absolute;
