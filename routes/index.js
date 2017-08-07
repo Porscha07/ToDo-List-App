@@ -21,7 +21,10 @@ var config = require('../config/config');
 
 /* GET  HOME page. */
 router.get('/index', function(req, res, next) {
-    var message = req.query.msg;//can substitute msg for api key, etc
+    var message = req.query.msg;
+    // console.log(req.body)
+    console.log(req.session.userName)
+    //can substitute msg for api key, etc
     // console.log(req);
     if(message == "added"){
         message = "Your task was added!";
@@ -31,12 +34,11 @@ router.get('/index', function(req, res, next) {
         message ="Your task was deleted!";
     }
     var selectQuery = "SELECT * FROM tasks";
-    console.log(req.session.userName);
     //console.log("==========About to run query=========="");
     connection.query(selectQuery,(error, results)=>{//query comes back with either error or results)
     //console.log("====")
         res.render('index',{
-            userName: req.session.userName,
+            hi: req.session.userName,
             message: message,
             taskArray: results// what we get back from running in mySql ( selectquery)
         });
