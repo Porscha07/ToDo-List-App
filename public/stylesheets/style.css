@@ -47,15 +47,15 @@ a {
   width: 39%;
 }
 .task-input{
-  margin-left: 22em;
+  margin-left: 29em;
 }
-/* .form-group{
-  width: 63%;
-  margin-left: 8em;
-} */
+.form-group{
+  width: 71%;
+  margin-left: 6em;
+}
 .form-control{
-    width: 50%;
-    margin-left: -21em;
+  width: 57%;
+  margin-left: -9em;
 }
 
 #tasks h1{
