@@ -49,9 +49,9 @@ a {
 .task-input{
   margin-left: 22em;
 }
-.form-control{
-  margin-top: 1em;
-  width: 25em;
+.form-group{
+  width: 63%;
+  margin-left: 8em;
 }
 
 #tasks h1{
