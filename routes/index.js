@@ -36,7 +36,7 @@ router.get('/index', function(req, res, next) {
     connection.query(selectQuery,(error, results)=>{//query comes back with either error or results)
     //console.log("====")
         res.render('index',{
-            userName: req.session.userName,
+            userName: "blob",
             message: message,
             taskArray: results// what we get back from running in mySql ( selectquery)
         });
