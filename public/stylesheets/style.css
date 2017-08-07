@@ -12,6 +12,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+h2{
+  font-size: 5px;
+}
+
 .img-responsive{
     width: 99vw;
     border: 1em solid black;
@@ -82,11 +86,12 @@ a {
 }
  #welcome-msg{
  	position: absolute;
-    top: 12%;
-    border: 1px solid black;
-    width: 185px;
-    background-color: cyan;
-    margin-left: 5em;
+  top: 12%;
+  border: 1px solid black;
+  width: 185px;
+  background-color: cyan;
+  margin-left: 5em;
+  font-size: 2px;
 }
 
 /* MEDIA QUERIES */
