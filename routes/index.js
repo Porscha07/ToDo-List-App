@@ -54,7 +54,7 @@ router.get('/index', function(req, res, next) {
 router.post('/index', function(req, res) {
     // console.log(req.session);
   console.log('post /')
-    var userName = req.body.username;
+    var userName = req.body.userName;
     // console.log(req.body);
     console.log(userName);
     var password = req.body.password;
