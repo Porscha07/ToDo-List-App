@@ -38,8 +38,8 @@ a {
     height: 67%;
     overflow: auto;
 }
-
-.form-control{
+/* edit section */
+.form-control{ 
   margin-left: -12em;
   margin-bottom: 10px;
   text-align: left;
@@ -54,8 +54,23 @@ a {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.task-date{
-  margin-left: 42em;
+#form-task{ 
+  margin-right: 9em;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 39%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#task-date{
+  margin-left: 40em;
 }
 .form-group{
   width: 65%;
