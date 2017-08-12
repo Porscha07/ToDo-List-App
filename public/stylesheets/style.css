@@ -55,7 +55,7 @@ a {
   border-radius: 4px;
 }
 #form-task{ 
-  margin-right: 11em;
+  margin-left: -22em;
   margin-bottom: 10px;
   text-align: left;
   width: 75%;
@@ -70,7 +70,7 @@ a {
   border-radius: 4px;
 }
 #task-date{
-  margin-left: 40em;
+  margin-left: 40 em;
 }
 .form-group{
   width: 65%;
