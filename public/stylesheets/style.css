@@ -42,11 +42,8 @@ a {
 .form-control{
   margin-left: -12em;
   margin-bottom: 10px;
-  margin-bottom: 11px;
   text-align: left;
   width: 39%;
-  display: block;
-  width: 100%;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
@@ -57,8 +54,8 @@ a {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.task-input{
-  margin-left: 36em;
+.task-date{
+  margin-left: 42em;
 }
 .form-group{
   width: 65%;
@@ -67,8 +64,8 @@ a {
 
 #tasks h1{
 	font-family: Autour One;
-    font-weight: bold;
-    font-size: 54px;
+  font-weight: bold;
+  font-size: 54px;
 
 }
 
@@ -85,7 +82,7 @@ a {
 .btn-primary{
 	background-color: cyan;
 	color: black;
-  margin-left: 30em;
+  margin-left: 32em;
 }
  #welcome-msg{
  	position: absolute;
