@@ -111,7 +111,17 @@ a {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width:750px){
+@media only screen and (min-width:1920px){
+  #form-tasks{
+    margin-left: -45em;
+  }
+  #task-date{
+    margin-left: 21em;
+    width: 68%;
+  }
+}
+
+/* @media only screen and (min-width:750px){
  #tasks{
     font-size: 2em;
     top: 25%;
@@ -120,12 +130,12 @@ a {
  #welcome-msg{
     top: 10%;
     /* width: 20px%; */
-  }
-}
+  /* } */
+/* }  */
 @media only screen and (min-width:400px){
-  .form-control{
+  .form-task{
   margin-left: -31em;
-  padding-right:: 394px;
+  padding-right: 394px;
   width: 17em;
   }
   .input-group{
