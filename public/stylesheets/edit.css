@@ -32,7 +32,7 @@
 }
 
 #input-date{
-    margin-left: 28em;
+    margin-left: 26em;
     width: 20%;
 }
 
@@ -44,10 +44,10 @@
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width:400px){
+/* @media only screen and (max-width:400px){
     #input-date{
         margin-left: 3em;
         width: 64%;
         height: 2em;
     }
-}
+} */
