@@ -44,9 +44,3 @@
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width:400px){
-    #input-date{
-        width: 40%;
-        margin-left: 10em;
-    }
-}
