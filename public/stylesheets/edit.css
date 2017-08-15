@@ -43,20 +43,4 @@
     border-color: black;
  }
 
-/* MEDIA QUERIES */
-@media only screen and (min-width:1920px){
-    #input-date{
-        margin-left: 3em;
-        width: 64%;
-        height: 2em;
-    }
-}
 
-
-@media only screen and (min-width:400px){
-    #input-date{
-        margin-left: 3em;
-        width: 64%;
-        height: 2em;
-    }
-}
