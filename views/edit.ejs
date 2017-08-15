@@ -19,7 +19,7 @@
 				<form action="/editItem" method="post">
 					<div class="form-group content">
 						<input type="text" form="form-control" placeholder="New Task" name="newTask" value="<%=task.taskName%>"/>
-						<input id="input-date" type="date" class="form-control" name="newTaskDate" value="<%task.taskDate%>"/>
+						<input type="date" form="form-control" name="newTaskDate" value="<%task.taskDate%>"/>
 						<input type="hidden"name="id" value="<%=task.id%>"/>
 					</div>
 					<button type="submit" class="btn btn-primary">Edit Task</button>
