@@ -74,9 +74,12 @@ a {
   width:  68%;
 } */
 .form-group{
-margin-left: 0em;
+margin-left: -1em;
+width: 113%;
 }
-
+.input-group{
+  width: 70%;
+}
 .tasks h1{
 	font-family: Autour One;
   font-weight: bold;
