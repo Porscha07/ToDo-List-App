@@ -54,7 +54,7 @@ a {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-#form-task{ 
+.tasks{ 
   margin-left: 19em;
   margin-bottom: 10px;
   text-align: left;
@@ -69,10 +69,10 @@ a {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-#task-date{
+/* #task-date{
   margin-left: 20em;
   width:  68%;
-}
+} */
 .form-group{
 margin-left: 0em;
 }
