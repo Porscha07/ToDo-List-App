@@ -38,23 +38,23 @@
 								  	<th class="text-center">Edit</th>
 								  	<th class="text-center">Delete</th>
 							  	</tr>
-							<% for (let i = 0; i<taskArray.length; i++){   %>
-							  	<tr>
-								  	<td><%= taskArray[i].taskName %>%></td>
-								  	<td><%= taskArray[i].taskDate.toLocaleDateString() %></td>
-								  	<td>
-								  	<a href="/edit/<%=taskArray[i].id %>">
-								  	<button class ="btn btn-warning">Edit</button>
-								  	</a>
-								  	</td>				
+								<% for (let i = 0; i<taskArray.length; i++){   %>
+								  	<tr>
+									  	<td><%= taskArray[i].taskName %>%></td>
+									  	<td><%= taskArray[i].taskDate.toLocaleDateString() %></td>
+									  	<td>
+									  		<a href="/edit/<%=taskArray[i].id %>">
+									  			<button class ="btn btn-warning">Edit</button>
+									  		</a>
+									  	</td>					
 
-								  	<td>
-									  	<a href="/delete/<%=taskArray[i].id%>">
-										  	<button class="btn btn-danger">Delete</button>
-									  	</a>
-								  	</td>
-							  	</tr>
-							<% } %>
+									  	<td>
+										  	<a href="/delete/<%=taskArray[i].id%>">
+											  	<button class="btn btn-danger">Delete</button>
+										  	</a>
+									  	</td>
+							  		</tr>
+								<% } %>
 					  	</table>
 					</div>
 				</div>

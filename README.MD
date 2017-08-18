@@ -30,7 +30,7 @@ To-Do for You is a web application that provides a concise and creative way to k
 
 Users see a brief welcome message and can either log in or create an account.
  <p align='center'>
-    <img src='public/images/homepage.png'></img>
+    <img src='public/images/todo-home.png'></img>
  </p>
 
 ## User's Home Page

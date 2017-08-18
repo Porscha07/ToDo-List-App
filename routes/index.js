@@ -92,9 +92,9 @@ router.post('/index', function(req, res) {
 router.post('/addItem',(req,res)=>{
     //res.json(req.body)
     var newTask = req.body.newTask;
-    var dueDate = req.body.newTaskDate;
+    var newTaskDate = req.body.newTaskDate;
     //we know what they submitted from the form. It comes from this route inside. req.body.NAMEOFFIELD. Now we need to insert it into MYSQL.
-    var insertQuery = "INSERT INTO tasks ( taskName, taskDate) VALUES('"+newTask+"','"+dueDate+"')";//insert statement
+    var insertQuery = "INSERT INTO tasks ( taskName, taskDate) VALUES('"+newTask+"','"+newTaskDate+"')";//insert statement
     //res.send(insertQuery);//way to test your query
     connection.query(insertQuery,(error,results)=>{
         if(error) throw error;
